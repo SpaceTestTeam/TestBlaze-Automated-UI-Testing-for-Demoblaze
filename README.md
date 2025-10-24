@@ -1,5 +1,9 @@
 # [TestBlaze-Automated-UI-Testing-for-Demoblaze](https://drive.google.com/drive/folders/1eCHLjHFVIVb7aqCkh1tVivoAibe65rAp?usp=sharing)
 
+## Project Idea
+
+To conduct a comprehensive quality control assessment of the `demoblaze.com` e-commerce platform, ensuring its functional integrity, reliability, and adherence to user experience standards.
+
 ## 👥 Team Members
 
 | Name                 | Role           | GitHub Profile                           |
@@ -9,6 +13,10 @@
 |   Abdlerhman Waheed      |   Member    | [GitHub](https://github.com/Abdelrhman-Waheed )  |
 |    Aya Yassin   | Member    | [GitHub](https://github.com/Ayaa-yassin)  |
 |    Amir  Helmy  | Member    |  |
+
+## Instructor
+
+### Abdelrahman Osama
 
 ## Project Structure
 
