@@ -1,111 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-24T22:02:05 EEST" name="Surefire suite" finished-at="2025-10-24T22:02:24 EEST" duration-ms="19042">
+  <suite started-at="2025-10-25T20:03:05 EEST" name="Surefire suite" finished-at="2025-10-25T20:03:55 EEST" duration-ms="50385">
     <groups>
+      <group name="Categories">
+        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+      </group> <!-- Categories -->
+      <group name="Carousel">
+        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+      </group> <!-- Carousel -->
       <group name="NavBar">
-        <method signature="HomePageTest.testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" name="testCartLink" class="com.spacetest.demoblaze.tests.HomePageTest"/>
-        <method signature="HomePageTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" name="testContactLink" class="com.spacetest.demoblaze.tests.HomePageTest"/>
-        <method signature="HomePageTest.testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" name="testHomeLink" class="com.spacetest.demoblaze.tests.HomePageTest"/>
-        <method signature="HomePageTest.testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" name="testLogoLink" class="com.spacetest.demoblaze.tests.HomePageTest"/>
+        <method signature="NavigationBarTest.testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testAboutUsLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testCartLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testHomeLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLogoLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
       </group> <!-- NavBar -->
+      <group name="Regression">
+        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-10-24T22:02:05 EEST" name="Surefire test" finished-at="2025-10-24T22:02:24 EEST" duration-ms="19042">
-      <class name="com.spacetest.demoblaze.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:05 EEST" name="setUp" finished-at="2025-10-24T22:02:08 EEST" duration-ms="3119" status="PASS">
+    <test started-at="2025-10-25T20:03:05 EEST" name="Surefire test" finished-at="2025-10-25T20:03:55 EEST" duration-ms="50385">
+      <class name="com.spacetest.demoblaze.tests.ProductSliderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:41 EEST" name="setUp" finished-at="2025-10-25T20:03:43 EEST" duration-ms="2104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:08 EEST" name="testCartLink" description="Verify clicking the &#039;Cart&#039; navigates to the cartpage" finished-at="2025-10-24T22:02:09 EEST" duration-ms="950" status="PASS">
+        <test-method signature="testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:43 EEST" name="testCarouselArrowNavigation" description="Verify slider arrows change images on click" finished-at="2025-10-25T20:03:45 EEST" duration-ms="2273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCarouselArrowNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:45 EEST" name="tearDown" finished-at="2025-10-25T20:03:45 EEST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:45 EEST" name="setUp" finished-at="2025-10-25T20:03:49 EEST" duration-ms="3733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:49 EEST" name="testCarouselAutoSlide" description="Verify slider changes images automatically" finished-at="2025-10-25T20:03:55 EEST" duration-ms="5728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCarouselAutoSlide -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:55 EEST" name="tearDown" finished-at="2025-10-25T20:03:55 EEST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.ProductSliderTest -->
+      <class name="com.spacetest.demoblaze.tests.NavigationBarTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:19 EEST" name="setUp" finished-at="2025-10-25T20:03:21 EEST" duration-ms="2028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:21 EEST" name="testAboutUsLink" description="Verify clicking the &#039;About Us&#039; opens the About Us modal" finished-at="2025-10-25T20:03:21 EEST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAboutUsLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:21 EEST" name="tearDown" finished-at="2025-10-25T20:03:22 EEST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:22 EEST" name="setUp" finished-at="2025-10-25T20:03:23 EEST" duration-ms="1925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:23 EEST" name="testCartLink" description="Verify clicking the &#039;Cart&#039; navigates to the cartpage" finished-at="2025-10-25T20:03:24 EEST" duration-ms="615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCartLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:09 EEST" name="tearDown" finished-at="2025-10-24T22:02:09 EEST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:24 EEST" name="tearDown" finished-at="2025-10-25T20:03:24 EEST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:09 EEST" name="setUp" finished-at="2025-10-24T22:02:14 EEST" duration-ms="4475" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:24 EEST" name="setUp" finished-at="2025-10-25T20:03:26 EEST" duration-ms="1999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:14 EEST" name="testContactLink" description="Verify clicking the &#039;Contact&#039; opens the contact modal" finished-at="2025-10-24T22:02:14 EEST" duration-ms="99" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Contact modal is not displayed. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Contact modal is not displayed. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.spacetest.demoblaze.tests.HomePageTest.testContactLink(HomePageTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:26 EEST" name="testContactLink" description="Verify clicking the &#039;Contact&#039; opens the contact modal" finished-at="2025-10-25T20:03:27 EEST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:14 EEST" name="tearDown" finished-at="2025-10-24T22:02:14 EEST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:27 EEST" name="tearDown" finished-at="2025-10-25T20:03:27 EEST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:14 EEST" name="setUp" finished-at="2025-10-24T22:02:19 EEST" duration-ms="5293" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:27 EEST" name="setUp" finished-at="2025-10-25T20:03:29 EEST" duration-ms="2058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:19 EEST" name="testHomeLink" description="Verify clicking the &#039;Home&#039; navigates to the homepage" finished-at="2025-10-24T22:02:20 EEST" duration-ms="704" status="PASS">
+        <test-method signature="testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:29 EEST" name="testHomeLink" description="Verify clicking the &#039;Home&#039; navigates to the homepage" finished-at="2025-10-25T20:03:30 EEST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomeLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:20 EEST" name="tearDown" finished-at="2025-10-24T22:02:20 EEST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:30 EEST" name="tearDown" finished-at="2025-10-25T20:03:30 EEST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:20 EEST" name="setUp" finished-at="2025-10-24T22:02:23 EEST" duration-ms="2739" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:30 EEST" name="setUp" finished-at="2025-10-25T20:03:32 EEST" duration-ms="1848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:23 EEST" name="testLogoLink" description="Verify clicking the &#039;Logo&#039; navigates to the homepage" finished-at="2025-10-24T22:02:24 EEST" duration-ms="510" status="PASS">
+        <test-method signature="testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:32 EEST" name="testLoginLink" description="Verify clicking the &#039;Login&#039; opens the Login modal" finished-at="2025-10-25T20:03:33 EEST" duration-ms="689" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogoLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.HomePageTest@5562c41e]" started-at="2025-10-24T22:02:24 EEST" name="tearDown" finished-at="2025-10-24T22:02:24 EEST" duration-ms="241" status="PASS">
+        </test-method> <!-- testLoginLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:33 EEST" name="tearDown" finished-at="2025-10-25T20:03:33 EEST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.spacetest.demoblaze.tests.HomePageTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:33 EEST" name="setUp" finished-at="2025-10-25T20:03:37 EEST" duration-ms="3860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="testLogoLink" description="Verify clicking the &#039;Logo&#039; navigates to the homepage" finished-at="2025-10-25T20:03:37 EEST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="tearDown" finished-at="2025-10-25T20:03:37 EEST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="setUp" finished-at="2025-10-25T20:03:40 EEST" duration-ms="2436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:40 EEST" name="testSignupLink" description="Verify clicking the &#039;Sign up&#039; opens the Sign up modal" finished-at="2025-10-25T20:03:40 EEST" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:40 EEST" name="tearDown" finished-at="2025-10-25T20:03:41 EEST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.NavigationBarTest -->
+      <class name="com.spacetest.demoblaze.tests.CategoryMenuTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:05 EEST" name="setUp" finished-at="2025-10-25T20:03:08 EEST" duration-ms="3418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:08 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:10 EEST" duration-ms="1801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Phones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung galaxy s6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCategoryProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:10 EEST" name="tearDown" finished-at="2025-10-25T20:03:10 EEST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:10 EEST" name="setUp" finished-at="2025-10-25T20:03:12 EEST" duration-ms="1994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:12 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:14 EEST" duration-ms="1757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptops]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sony vaio i5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCategoryProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:14 EEST" name="tearDown" finished-at="2025-10-25T20:03:14 EEST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:14 EEST" name="setUp" finished-at="2025-10-25T20:03:17 EEST" duration-ms="2094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:17 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:18 EEST" duration-ms="1704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Monitors]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Apple monitor 24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCategoryProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:18 EEST" name="tearDown" finished-at="2025-10-25T20:03:19 EEST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.CategoryMenuTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
