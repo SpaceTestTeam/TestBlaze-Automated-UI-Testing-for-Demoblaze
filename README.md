@@ -32,7 +32,9 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   ├── Testing Scope.docx  
 │   └── [Testing Scope.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Testing%20Scope.pdf)  
 ├── [Automation](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/tree/main/Automation)  
-│   ├── README.md  
+
+```text
+├── Automation
 │   ├── pom.xml  
 │   ├── src  
 │   │   ├── main  
@@ -70,3 +72,4 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   │       └── resources  
 │   └── target  
 └── README.md  
+```
