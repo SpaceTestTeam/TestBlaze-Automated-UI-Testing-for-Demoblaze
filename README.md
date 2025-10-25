@@ -41,11 +41,19 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   │   │           └── spacetest  
 │   │   │               └── demoblaze  
 │   │   │                   ├── base  
+│   │   │                   │   ├── BaseComponent.java  
 │   │   │                   │   ├── BasePage.java  
 │   │   │                   │   └── DriverManager.java  
 │   │   │                   ├── constants  
+│   │   │                   │   └── Constants.java  
 │   │   │                   ├── pages  
-│   │   │                   │   └── HomePage.java  
+│   │   │                   │   ├── HomePage.java  
+│   │   │                   │   ├── ProductPage.java  
+│   │   │                   │   └── components  
+│   │   │                   │       ├── CategoryComponent.java  
+│   │   │                   │       ├── NavigationBar.java  
+│   │   │                   │       ├── ProductCardComponent.java  
+│   │   │                   │       └── ProductSlider.java  
 │   │   │                   └── utils  
 │   │   └── test  
 │   │       ├── java  
@@ -53,8 +61,12 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   │       │       └── spacetest  
 │   │       │           └── demoblaze  
 │   │       │               ├── base  
-│   │       │               │   └── BaseTest.java  
+│   │       │               │   ├── BaseTest.java  
+│   │       │               │   └── TestDataProviders.java  
 │   │       │               └── tests  
+│   │       │                   ├── CategoryMenuTest.java  
+│   │       │                   ├── NavigationBarTest.java  
+│   │       │                   └── ProductSliderTest.java  
 │   │       └── resources  
 │   └── target  
 └── README.md  
