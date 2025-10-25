@@ -22,6 +22,8 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 
 [TestBlaze-Automated-UI-Testing-for-Demoblaze](https://drive.google.com/drive/folders/1eCHLjHFVIVb7aqCkh1tVivoAibe65rAp?usp=sharing)  
 ├── [Project Planning & Management](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/tree/main/Project%20Planning%20%26%20Management)  
+│   ├── [Bug_Report.xlsx](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Bug_Report.xlsx)  
+│   ├── [DemoBlaze_TestCases.xlsx](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/DemoBlaze_TestCases.xlsx)  
 │   ├── Project Description.docx  
 │   ├── [Project Description.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Project%20Description.pdf)  
 │   ├── Roles.docx  
