@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import com.spacetest.demoblaze.base.BasePage;
 import com.spacetest.demoblaze.constants.Constants;
 import com.spacetest.demoblaze.pages.components.CategoryComponent;
+import com.spacetest.demoblaze.pages.components.FooterComponent;
 import com.spacetest.demoblaze.pages.components.NavigationBar;
 import com.spacetest.demoblaze.pages.components.ProductSlider;
 
@@ -13,7 +14,8 @@ public class HomePage extends BasePage {
     private NavigationBar navigationBar;
     private ProductSlider productSlider;
     private CategoryComponent categoryComponent;
-
+// ... (declarations for navigationBar, productSlider, categoryComponent)
+    private FooterComponent footerComponent; // Add this declaration
     // --- Constructor ---
     public HomePage(WebDriver driver) {
         // This constructor assumes BasePage has a constructor
@@ -24,6 +26,7 @@ public class HomePage extends BasePage {
         this.navigationBar = new NavigationBar(driver);
         this.productSlider = new ProductSlider(driver);
         this.categoryComponent = new CategoryComponent(driver);
+        this.footerComponent = new FooterComponent(driver); // Add this line
     }
 
     // 3. Create "getter" methods to access the components
@@ -38,10 +41,7 @@ public class HomePage extends BasePage {
     public CategoryComponent categories() {
         return categoryComponent;
     }
-    
-    // You can add a 'visit()' method here if your BasePage doesn't
-    // automatically open the URL in its constructor.
-    public void visit() {
-        driver.get(Constants.BASE_URL);
+    public FooterComponent footer() {
+        return footerComponent;
     }
 }

@@ -94,4 +94,53 @@ public class CategoryMenuTest extends BaseTest {
         Assert.assertEquals(actualName, expectedProductName, 
             "Product name on details page is incorrect after clicking image.");
     }
+    @Test(description = "Verify 'Previous' button is not displayed on the first page",
+          groups = {"Pagination", "Regression"})
+    public void testPrevButtonHiddenOnFirstPage() {
+        // 1. Check if 'Next' is there (to confirm we have pagination)
+        Assert.assertTrue(homePage.categories().isNextButtonDisplayed(), 
+            "'Next' button is not displayed, cannot test pagination.");
+        
+        // 2. Assert that 'Previous' is NOT displayed
+        Assert.assertFalse(homePage.categories().isPrevButtonDisplayed(), 
+            "'Previous' button IS visible on the first page.");
+    }
+    
+    @Test(description = "Verify clicking 'Next' and 'Previous' navigates pages",
+          groups = {"Pagination", "Regression"})
+    public void testPaginationNavigation() {
+        // --- Test Case 2: Verify 'Next' button ---
+
+        // 1. Get the list of products on Page 1
+        List<String> page1Products = homePage.categories().getProductNames();
+        
+        // 2. Action: Click the 'Next' page button
+        homePage.categories().clickNextPage();
+        
+        // 3. Get the list of products on Page 2
+        List<String> page2Products = homePage.categories().getProductNames();
+
+        // 4. Verification
+        Assert.assertNotEquals(page1Products, page2Products, 
+            "Product list did not update after clicking 'Next'.");
+        
+        Assert.assertTrue(homePage.categories().isPrevButtonDisplayed(), 
+            "'Previous' button is NOT visible on the second page.");
+
+        
+        // --- Test Case 3: Verify 'Previous' button ---
+
+        // 5. Action: Click the 'Previous' page button
+        homePage.categories().clickPrevPage();
+        
+        // 6. Get the products from the (new) current page
+        List<String> page1ProductsAgain = homePage.categories().getProductNames();
+        
+        // 7. Verification
+        Assert.assertNotEquals(page2Products, page1ProductsAgain,
+            "Product list did not update after clicking 'Previous'.");
+            
+        Assert.assertEquals(page1Products, page1ProductsAgain,
+            "Product list after clicking 'Previous' does not match the original Page 1 list.");
+    }
 }
