@@ -1,5 +1,7 @@
 package com.spacetest.demoblaze.base;
 
+import java.util.UUID;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,5 +23,9 @@ public class BaseTest {
     public void tearDown() {
         // 4. Quit the driver using your static manager
         DriverManager.quitDriver();
+    }
+    public String generateRandomUsername() {
+        // Creates a short, unique string
+        return "testuser_" + UUID.randomUUID().toString().substring(0, 8);
     }
 }   

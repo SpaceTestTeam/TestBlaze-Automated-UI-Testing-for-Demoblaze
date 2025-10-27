@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.spacetest.demoblaze.base.BaseComponent;
+import com.spacetest.demoblaze.pages.LoginPage;
+import com.spacetest.demoblaze.pages.SignupPage;
 
 public class NavigationBar extends BaseComponent {
 
@@ -43,6 +45,13 @@ public class NavigationBar extends BaseComponent {
 
     @FindBy(id = "login2")
     private WebElement loginLink;
+    
+    // --- NEW Locators for Logged-In State ---
+    @FindBy(id = "nameofuser") // "Welcome testuser"
+    private WebElement welcomeMessage;
+    
+    @FindBy(id = "logout2")
+    private WebElement logoutLink;
 
     @FindBy(id = "logInModalLabel")
     private WebElement loginModalTitle;
@@ -111,9 +120,11 @@ public class NavigationBar extends BaseComponent {
     }
 
     // Login
-    public void clickLoginLink() {
+    public LoginPage clickLoginLink() {
         loginLink.click();
         wait.until(ExpectedConditions.visibilityOf(loginModalTitle));
+                // Return a new instance of the LoginPage component
+        return new LoginPage(driver);
     }
 
     public boolean isLoginModalDisplayed() {
@@ -129,9 +140,10 @@ public class NavigationBar extends BaseComponent {
     }
 
     // Signup
-    public void clickSignupLink() {
+    public SignupPage clickSignupLink() {
         signupLink.click();
         wait.until(ExpectedConditions.visibilityOf(signupModalTitle));
+        return new SignupPage(driver);
     }
 
     public boolean isSignupModalDisplayed() {
@@ -144,5 +156,38 @@ public class NavigationBar extends BaseComponent {
 
     public void closeSignupModal() {
         signupModalCloseButton.click();
+    }
+    /**
+     * Clicks the 'Log in' link and returns a LoginPage object
+     * to interact with the modal.
+     */
+    public String getWelcomeMessage() {
+        return wait.until(ExpectedConditions.visibilityOf(welcomeMessage)).getText();
+    }
+
+    /**
+     * Clicks the 'Log out' link and waits for it to disappear.
+     */
+    public void clickLogout() {
+        wait.until(ExpectedConditions.elementToBeClickable(logoutLink)).click();
+        // Wait for the page to refresh (logout link disappears)
+        wait.until(ExpectedConditions.invisibilityOf(logoutLink));
+    }
+    public boolean isLoginLinkClickable() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(loginLink));
+            return true;
+        } catch (Exception e) {
+            // Catches TimeoutException, NoSuchElementException, etc.
+            return false;
+        }
+    }
+    public boolean isSignupLinkClickable() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(signupLink));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

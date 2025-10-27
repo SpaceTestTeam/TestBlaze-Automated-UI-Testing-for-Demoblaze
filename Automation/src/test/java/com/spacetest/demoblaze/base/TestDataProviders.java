@@ -2,6 +2,8 @@ package com.spacetest.demoblaze.base;
 
 import org.testng.annotations.DataProvider;
 
+import com.spacetest.demoblaze.constants.Constants;
+
 public class TestDataProviders {
 
     /**
@@ -17,16 +19,34 @@ public class TestDataProviders {
         };
     }
 
-    /**
-     * Provides data for invalid login attempts.
-     * @return A 2D array: {username, password, expectedMessage}
-     */
     @DataProvider(name = "invalidLoginData")
     public static Object[][] getInvalidLoginData() {
         return new Object[][] {
-            {"invalidUser", "pass", "User does not exist."},
-            {"testuser", "wrongpass", "Wrong password."}
-            // You would need to get the exact alert messages
+            {"testuser", "wrongpass", "Wrong password."},
+            {"invalidUser", "test123", "User does not exist."}
+        };
+    }
+
+    @DataProvider(name = "emptyLoginData")
+    public static Object[][] getEmptyLoginData() {
+        return new Object[][] {
+            {"", "", "Please fill out Username and Password."},
+            {"testuser", "", "Please fill out Username and Password."},
+            {"", "test123", "Please fill out Username and Password."}
+        };
+    }
+
+    @DataProvider(name = "invalidSignupData")
+    public static Object[][] getInvalidSignupData() {
+        return new Object[][] {
+            // Test Case SU02
+            {Constants.VALID_USERNAME, Constants.VALID_PASSWORD, "This user already exist."},
+            // Test Case SU03
+            {"", "", "Please fill out Username and Password."},
+            // Test Case SU04
+            {"", "testpass123", "Please fill out Username and Password."},
+            // Test Case SU05
+            {"testuser123", "", "Please fill out Username and Password."}
         };
     }
 }
