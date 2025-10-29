@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.spacetest.demoblaze.base.BaseComponent;
+import com.spacetest.demoblaze.pages.CartPage;
 import com.spacetest.demoblaze.pages.LoginPage;
 import com.spacetest.demoblaze.pages.SignupPage;
 
@@ -76,11 +77,6 @@ public class NavigationBar extends BaseComponent {
 
     public void clickHomeLink() {
         homeLink.click();
-    }
-
-    public void clickCartLink() {
-        cartLink.click();
-        // Note: Add wait for cart page to load here
     }
 
     // Contact
@@ -189,5 +185,9 @@ public class NavigationBar extends BaseComponent {
         } catch (Exception e) {
             return false;
         }
+    }
+    public CartPage clickCartLink() {
+        wait.until(ExpectedConditions.elementToBeClickable(cartLink)).click();
+        return new CartPage(driver);
     }
 }

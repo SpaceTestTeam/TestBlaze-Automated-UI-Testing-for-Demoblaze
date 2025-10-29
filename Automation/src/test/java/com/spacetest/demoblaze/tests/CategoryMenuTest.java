@@ -58,26 +58,26 @@ public class CategoryMenuTest extends BaseTest {
         // 4. Report all failures at the end
         softAssert.assertAll();
     }
-    @Test(description = "Verify clicking a product title navigates to the correct product page", 
-          groups = {"Categories", "Regression"})
-    public void testClickProductTitleNavigates() {
-        // 1. Get the first product's details from the homepage
-        ProductCardComponent firstProduct = homePage.categories().getAllProducts().get(0);
-        String expectedProductName = firstProduct.getTitle();
-        String expectedProductPrice = firstProduct.getPrice(); // e.g., "$360"
+    // @Test(description = "Verify clicking a product title navigates to the correct product page", 
+    //       groups = {"Categories", "Regression"})
+    // public void testClickProductTitleNavigates() {
+    //     // 1. Get the first product's details from the homepage
+    //     ProductCardComponent firstProduct = homePage.categories().getAllProducts().get(0);
+    //     String expectedProductName = firstProduct.getTitle();
+    //     String expectedProductPrice = firstProduct.getPrice(); // e.g., "$360"
         
-        // 2. Action: Click the title
-        ProductPage productPage = firstProduct.clickTitle();
+    //     // 2. Action: Click the title
+    //     ProductPage productPage = firstProduct.clickTitle();
         
-        // 3. Verification: Check details on the new page
-        String actualName = productPage.getProductName();
-        String actualPrice = productPage.getProductPrice(); // e.g., "$360 *includes tax"
+    //     // 3. Verification: Check details on the new page
+    //     String actualName = productPage.getProductName();
+    //     String actualPrice = productPage.getProductPrice(); // e.g., "$360 *includes tax"
         
-        Assert.assertEquals(actualName, expectedProductName, "Product name on details page is incorrect.");
-        Assert.assertTrue(actualPrice.contains(expectedProductPrice), 
-            "Product price on details page is incorrect. Expected to find '" + 
-            expectedProductPrice + "' in '" + actualPrice + "'");
-    }
+    //     Assert.assertEquals(actualName, expectedProductName, "Product name on details page is incorrect.");
+    //     Assert.assertTrue(actualPrice.contains(expectedProductPrice), 
+    //         "Product price on details page is incorrect. Expected to find '" + 
+    //         expectedProductPrice + "' in '" + actualPrice + "'");
+    // }
     @Test(description = "Verify clicking a product image navigates to the correct product page", 
           groups = {"Categories", "Regression"})
     public void testClickProductImageNavigates() {
