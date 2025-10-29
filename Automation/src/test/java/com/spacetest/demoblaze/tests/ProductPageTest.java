@@ -53,7 +53,7 @@ public class ProductPageTest extends BaseTest {
         // 4. Verify product is in cart
         CartPage cartPage = productPage.navBar().clickCartLink();
         cartPage.waitForPageToLoad();
-        String cartItemName = cartPage.getFirstProductNameInCart();
+        String cartItemName = cartPage.getCartItems().get(0).getName();
         
         Assert.assertEquals(cartItemName, expectedName, "Product was not found in the cart.");
     }
