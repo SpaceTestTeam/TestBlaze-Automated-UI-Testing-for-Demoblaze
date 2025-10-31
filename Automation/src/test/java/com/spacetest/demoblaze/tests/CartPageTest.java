@@ -10,8 +10,8 @@ import com.spacetest.demoblaze.constants.Constants;
 import com.spacetest.demoblaze.pages.CartPage;
 import com.spacetest.demoblaze.pages.ProductPage;
 import com.spacetest.demoblaze.pages.components.CartItemComponent;
-import com.spacetest.demoblaze.pages.components.OrderConfirmationModal;
-import com.spacetest.demoblaze.pages.components.PlaceOrderModal;
+// import com.spacetest.demoblaze.pages.components.OrderConfirmationModal;
+// import com.spacetest.demoblaze.pages.components.PlaceOrderModal;
 import com.spacetest.demoblaze.pages.components.ProductCardComponent;
 
 public class CartPageTest extends BaseTest {
