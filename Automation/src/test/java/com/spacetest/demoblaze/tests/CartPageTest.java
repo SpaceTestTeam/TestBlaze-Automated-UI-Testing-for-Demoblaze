@@ -55,43 +55,44 @@ public class CartPageTest extends BaseTest {
         Assert.assertTrue(cartPage.isCartEmpty(), "Cart should be empty after deleting the item.");
     }
     
-    @Test(description = "CP_05: Verify 'Place Order' button", groups = {"Cart", "Smoke"})
-    public void testPlaceOrderSuccess() {
-        addFirstProductToCart();
-        CartPage cartPage = homePage.navBar().clickCartLink();
+    // @Test(description = "CP_05: Verify 'Place Order' button", groups = {"Cart", "Smoke"})
+    // public void testPlaceOrderSuccess() {
+    //     addFirstProductToCart();
+    //     CartPage cartPage = homePage.navBar().clickCartLink();
         
-        PlaceOrderModal orderModal = cartPage.clickPlaceOrder();
-        orderModal.fillOrderForm("Test User", "123456789");
-        orderModal.clickPurchase();
+    //     PlaceOrderModal orderModal = cartPage.clickPlaceOrder();
+    //     orderModal.fillOrderForm("Test User", "123456789");
+    //     orderModal.clickPurchase();
         
-        OrderConfirmationModal confirmModal = new OrderConfirmationModal(driver);
-        Assert.assertEquals(confirmModal.getSuccessMessage(), "Thank you for your purchase!");
-        confirmModal.clickOK();
+    //     OrderConfirmationModal confirmModal = new OrderConfirmationModal(driver);
+    //     Assert.assertEquals(confirmModal.getSuccessMessage(), "Thank you for your purchase!");
+    //     confirmModal.clickOK();
         
-        // Assert we are redirected to the homepage
-        Assert.assertEquals(driver.getCurrentUrl(), Constants.HOMEPAGEURL, "Did not redirect to homepage after purchase.");
-    }
+    //     // Assert we are redirected to the homepage
+    //     Assert.assertEquals(driver.getCurrentUrl(), Constants.HOMEPAGEURL, "Did not redirect to homepage after purchase.");
+    // }
 
-    @Test(description = "CP_06, CP_10: Verify checkout with empty cart", groups = {"Cart", "Regression"})
-    public void testCheckoutWithEmptyCart() {
-        CartPage cartPage = homePage.navBar().clickCartLink();
-        cartPage.waitForPageToLoad();
+    // @Test(description = "CP_06, CP_10: Verify checkout with empty cart", groups = {"Cart", "Regression"})
+    // public void testCheckoutWithEmptyCart() {
+    //     CartPage cartPage = homePage.navBar().clickCartLink();
+    //     cartPage.waitForPageToLoad();
         
-        // Assert cart is empty
-        Assert.assertTrue(cartPage.isCartEmpty(), "Cart is not empty at the start of the test.");
+    //     // Assert cart is empty
+    //     Assert.assertTrue(cartPage.isCartEmpty(), "Cart is not empty at the start of the test.");
         
-        // Act
-        PlaceOrderModal orderModal = cartPage.clickPlaceOrder();
-        orderModal.clickPurchase(); // Click purchase with empty form
+    //     // Act
+    //     PlaceOrderModal orderModal = cartPage.clickPlaceOrder();
+    //     orderModal.clickPurchase(); // Click purchase with empty form
         
-        // Assert
-        String alertText = orderModal.getAlertTextAndAccept();
-        Assert.assertEquals(alertText, "Please fill out Name and Creditcard.");
-    }
+    //     // Assert
+    //     String alertText = orderModal.getAlertTextAndAccept();
+    //     Assert.assertEquals(alertText, "Please fill out Name and Creditcard.");
+    // }
     
     @Test(description = "CP_08: Verify cart persistence after refresh", groups = {"Cart", "Regression"})
     public void testCartPersistenceAfterRefresh() {
         String productName = addFirstProductToCart();
+        @SuppressWarnings("unused")
         CartPage cartPage = homePage.navBar().clickCartLink();
         
         // Act

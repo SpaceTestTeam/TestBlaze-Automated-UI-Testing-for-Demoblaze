@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.spacetest.demoblaze.base.BaseTest;
 import com.spacetest.demoblaze.constants.Constants;
+import com.spacetest.demoblaze.pages.components.AboutUsModal;
+import com.spacetest.demoblaze.pages.components.ContactModal;
 
 public class NavigationBarTest extends BaseTest {
 
@@ -39,25 +41,25 @@ public class NavigationBarTest extends BaseTest {
     @Test(description = "Verify clicking the 'Contact' opens the contact modal", groups = {"NavBar", "Smoke"})
     public void testContactLink() {
         // 2. Action
-        homePage.navBar().clickContactLink();
+        ContactModal contactModal = homePage.navBar().clickContactLink();
         // 3. Verification
-        Assert.assertTrue(homePage.navBar().isContactModalDisplayed(), "Contact modal is not displayed.");
-        Assert.assertEquals(homePage.navBar().getContactModalTitleText(), "New message",
+        Assert.assertTrue(contactModal.isSendButtonDisplayed(), "Contact modal is not displayed.");
+        Assert.assertEquals(contactModal.getModalTitleText(), "New message",
                 "Contact modal title is incorrect.");
         // Close the modal
-        homePage.navBar().closeContactModal();
+        contactModal.clickCloseButton();
     }
 
     @Test(description = "Verify clicking the 'About Us' opens the About Us modal", groups = {"NavBar"})
     public void testAboutUsLink() {
         // 2. Action
-        homePage.navBar().clickAboutUsLink();
+        AboutUsModal aboutUsModal= homePage.navBar().clickAboutUsLink();
         // 3. Verification
-        Assert.assertTrue(homePage.navBar().isAboutUsModalDisplayed(), "About Us modal is not displayed.");
-        Assert.assertEquals(homePage.navBar().getAboutUsModalTitleText(), "About us",
+        Assert.assertTrue(aboutUsModal.isVideoPlayerDisplayed(), "About Us modal is not displayed.");
+        Assert.assertEquals(aboutUsModal.getModalTitleText(), "About us",
                 "About Us modal title is incorrect.");
         // Close the modal
-        homePage.navBar().closeAboutUsModal();
+        aboutUsModal.clickCloseButton();
     }
 
     @Test(description = "Verify clicking the 'Login' opens the Login modal", groups = {"NavBar", "Smoke"})

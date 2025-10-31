@@ -60,4 +60,14 @@ public class OrderConfirmationModal extends BaseComponent {
         // And finally, wait for the redirect to complete
         wait.until(ExpectedConditions.urlToBe(Constants.HOMEPAGEURL));
     }
+    public String getOrderAmount() {
+        String details = getConfirmationDetails();
+        // Use regex to find "Amount: 360"
+        java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("Amount: (\\d+) USD")
+                                                .matcher(details);
+        if (matcher.find()) {
+            return matcher.group(1); // Return the captured number
+        }
+        return null; // Return null if not found
+    }
 }

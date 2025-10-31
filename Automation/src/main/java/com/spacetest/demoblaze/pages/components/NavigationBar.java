@@ -80,39 +80,36 @@ public class NavigationBar extends BaseComponent {
     }
 
     // Contact
-    public void clickContactLink() {
-        contactLink.click();
+    
+    public ContactModal clickContactLink() {
+        wait.until(ExpectedConditions.elementToBeClickable(contactLink)).click();
         wait.until(ExpectedConditions.visibilityOf(contactModalTitle));
+        return new ContactModal(driver);
     }
 
-    public boolean isContactModalDisplayed() {
-        return contactModalTitle.isDisplayed();
-    }
-
-    public String getContactModalTitleText() {
-        return contactModalTitle.getText();
-    }
-
-    public void closeContactModal() {
-        contactModalCloseButton.click();
-    }
+    public boolean isContactLinkClickable() {
+            try {
+                wait.until(ExpectedConditions.elementToBeClickable(contactLink));
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+        }
 
     // About Us
-    public void clickAboutUsLink() {
+    public AboutUsModal clickAboutUsLink() {
         aboutUsLink.click();
         wait.until(ExpectedConditions.visibilityOf(aboutUsModalTitle));
+        return new AboutUsModal(driver);
     }
 
-    public boolean isAboutUsModalDisplayed() {
-        return aboutUsModalTitle.isDisplayed();
-    }
-
-    public String getAboutUsModalTitleText() {
-        return aboutUsModalTitle.getText();
-    }
-
-    public void closeAboutUsModal() {
-        aboutUsModalCloseButton.click();
+    public boolean isAboutUsLinkClickable() {
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(aboutUsLink));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     // Login
