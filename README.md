@@ -31,7 +31,7 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   ├── [SRS_Demoblaze_Complete_Final.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/SRS_Demoblaze_Complete_Final.pdf)  
 │   ├── Testing Scope.docx  
 │   ├── [Testing Scope.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Testing%20Scope.pdf)  
-│   └── [API Test Plan.xlsx](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/API%20Test%20Plan.pdf)  
+│   └── [API Test Plan.xlsx](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/API%20Test%20Plan.xlsx)  
 ├── [Automation](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/tree/main/Automation)  
 
 ```text
