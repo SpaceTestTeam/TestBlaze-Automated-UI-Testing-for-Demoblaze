@@ -105,7 +105,7 @@ public class RestfulBookerFullTests {
     @Test(priority = 2, description = "Create a new booking")
     public void testCreateBooking() {
         BookingDates dates = new BookingDates("2025-01-01", "2025-01-05");
-        Booking payload = new Booking("Jim", "Brown", 111, true, dates, "Breakfast");
+        Booking payload = new Booking("Mostafa", "ElFallal", 111, true, dates, "Breakfast");
 
         Response response = given()
             .log().all() // Log the request to debug
@@ -120,7 +120,7 @@ public class RestfulBookerFullTests {
         response.then()
             .statusCode(200)
             .body("bookingid", notNullValue())
-            .body("booking.firstname", equalTo("Jim"))
+            .body("booking.firstname", equalTo("Mostafa"))
             .body("booking.totalprice", equalTo(111));
             
         // Extract and store the new booking ID
@@ -141,8 +141,8 @@ public class RestfulBookerFullTests {
             .get("/booking/{id}")
         .then()
             .statusCode(200)
-            .body("firstname", equalTo("Jim"))
-            .body("lastname", equalTo("Brown"));
+            .body("firstname", equalTo("Mostafa"))
+            .body("lastname", equalTo("ElFallal"));
     }
 
     /**
@@ -153,7 +153,7 @@ public class RestfulBookerFullTests {
     public void testUpdateBookingPut() {
         // Create a new payload for the *full update*
         BookingDates newDates = new BookingDates("2025-02-10", "2025-02-15");
-        Booking updatedPayload = new Booking("Jane", "Smith", 222, false, newDates, "Vegan meal");
+        Booking updatedPayload = new Booking("Walaa", "m4 3arf eh kda", 222, false, newDates, "Vegan meal");
 
         given()
             // Defaults are applied
@@ -165,7 +165,7 @@ public class RestfulBookerFullTests {
             .put("/booking/{id}")
         .then()
             .statusCode(200)
-            .body("firstname", equalTo("Jane")) // Verify the updated name
+            .body("firstname", equalTo("Walaa")) // Verify the updated name
             .body("totalprice", equalTo(222)) // Verify the updated price
             .body("depositpaid", equalTo(false)); // Verify the updated deposit status
     }
@@ -193,7 +193,7 @@ public class RestfulBookerFullTests {
             .statusCode(200)
             .body("firstname", equalTo("UpdatedName")) // Verify updated name
             .body("totalprice", equalTo(999)) // Verify updated price
-            .body("lastname", equalTo("Smith")); // Verify last name is unchanged from the PUT test
+            .body("lastname", equalTo("m4 3arf eh kda")); // Verify last name is unchanged from the PUT test
     }
     
     /**
