@@ -30,11 +30,12 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   ├── [Roles.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Roles.pdf)  
 │   ├── [SRS_Demoblaze_Complete_Final.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/SRS_Demoblaze_Complete_Final.pdf)  
 │   ├── Testing Scope.docx  
-│   └── [Testing Scope.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Testing%20Scope.pdf)  
+│   ├── [Testing Scope.pdf](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/Testing%20Scope.pdf)  
+│   └── [API Test Plan.xlsx](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/blob/main/Project%20Planning%20%26%20Management/API%20Test%20Plan.pdf)  
 ├── [Automation](https://github.com/SpaceTestTeam/TestBlaze-Automated-UI-Testing-for-Demoblaze/tree/main/Automation)  
 
 ```text
-├── Automation
+├── Automation  
 │   ├── pom.xml  
 │   ├── src  
 │   │   ├── main  
@@ -49,11 +50,20 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   │   │                   ├── constants  
 │   │   │                   │   └── Constants.java  
 │   │   │                   ├── pages  
+│   │   │                   │   ├── CartPage.java  
 │   │   │                   │   ├── HomePage.java  
+│   │   │                   │   ├── LoginPage.java  
 │   │   │                   │   ├── ProductPage.java  
+│   │   │                   │   ├── SignupPage.java  
 │   │   │                   │   └── components  
+│   │   │                   │       ├── AboutUsModal.java  
+│   │   │                   │       ├── CartItemComponent.java  
 │   │   │                   │       ├── CategoryComponent.java  
+│   │   │                   │       ├── ContactModal.java  
+│   │   │                   │       ├── FooterComponent.java  
 │   │   │                   │       ├── NavigationBar.java  
+│   │   │                   │       ├── OrderConfirmationModal.java  
+│   │   │                   │       ├── PlaceOrderModal.java  
 │   │   │                   │       ├── ProductCardComponent.java  
 │   │   │                   │       └── ProductSlider.java  
 │   │   │                   └── utils  
@@ -66,10 +76,20 @@ To conduct a comprehensive quality control assessment of the `demoblaze.com` e-c
 │   │       │               │   ├── BaseTest.java  
 │   │       │               │   └── TestDataProviders.java  
 │   │       │               └── tests  
+│   │       │                   ├── AboutUsModalTest.java  
+│   │       │                   ├── CartPageTest.java  
 │   │       │                   ├── CategoryMenuTest.java  
+│   │       │                   ├── ContactModalTest.java  
+│   │       │                   ├── FooterTest.java  
+│   │       │                   ├── LoginPageTest.java  
 │   │       │                   ├── NavigationBarTest.java  
-│   │       │                   └── ProductSliderTest.java  
+│   │       │                   ├── PlaceOrderTest.java  
+│   │       │                   ├── ProductPageTest.java  
+│   │       │                   ├── ProductSliderTest.java  
+│   │       │                   ├── ResponsiveLayoutTest.java  
+│   │       │                   ├── RestfulBookerFullTests.java  
+│   │       │                   └── SignupPageTest.java  
 │   │       └── resources  
-│   └── target  
+│   ├── target  
 └── README.md  
 ```
