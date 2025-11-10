@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cart / Checkout Feature Suite" parallel="classes" thread-count="4" verbose="1">
+
+    <!-- 
+      This suite tests the entire "add to cart" and "purchase" workflow.
+      It's run sequentially ('parallel="false"') because the tests
+      logically depend on each other (e.g., must add to cart before placing order).
+    -->
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="false"/>
+    
+    <test name="Full Purchase Flow Tests">
+        <classes>
+            <!-- 
+              1. CategoryMenuTest: To find products
+              2. ProductPageTest: To add a product to the cart
+              3. CartPageTest: To verify the cart contents
+              4. PlaceOrderTest: To complete the purchase
+            -->
+            <class name="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+            <class name="com.spacetest.demoblaze.tests.ProductPageTest"/>
+            <class name="com.spacetest.demoblaze.tests.CartPageTest"/>
+            <class name="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        </classes>
+    </test>
+
+</suite>

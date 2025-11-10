@@ -12,39 +12,61 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+        <!-- Define versions for plugins and dependencies -->
+        <allure.version>2.29.1</allure.version>
+        <aspectj.version>1.9.22</aspectj.version>
+        <surefire.version>3.2.5</surefire.version>
+        <testng.version>7.11.0</testng.version>
+        <selenium.version>4.37.0</selenium.version>
     </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.37.0</version>
+            <version>${selenium.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>4.34.0</version>
+            <!-- 
+              *** FIX *** Changed version to match ${selenium.version} to avoid conflicts.
+            -->
+            <version>${selenium.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.11.0</version>
+            <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
+        
+        <!-- ===== ALLURE DEPENDENCIES ===== -->
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.29.1</version>
+            <version>${allure.version}</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
-            <version>2.29.1</version>
+            <version>${allure.version}</version>
         </dependency>
+        <!-- Required by Allure for annotations -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        <!-- ================================== -->
+
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
             <groupId>com.aventstack</groupId>
@@ -114,5 +136,31 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+<build>
+    <plugins>
+        <!-- Test Execution -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.5</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng-smoke.xml</suiteXmlFile>
+                    <suiteXmlFile>testng-regression.xml</suiteXmlFile>
+                    <suiteXmlFile>testng-api.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                <!-- Optional: parallel or rerun failed tests -->
+                <parallel>none</parallel>
+                <testFailureIgnore>false</testFailureIgnore>
+            </configuration>
+        </plugin>
 
+        <!-- Allure Integration -->
+        <plugin>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.11.2</version>
+        </plugin>
+    </plugins>
+</build>
 </project>

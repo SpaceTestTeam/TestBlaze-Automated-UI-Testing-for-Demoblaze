@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Full Project Test Run (All Suites)" parallel="tests" thread-count="4" verbose="1">
+
+    <!-- 
+      This is the "master-of-masters" suite.
+      It runs all other TestNG suite files sequentially.
+      The result will be a single, combined Allure report
+      containing the results from all 10 test suites.
+    -->
+
+    <suite-files>
+        <suite-file path="APITestSuite.xml" />
+        <suite-file path="AuthTestSuite.xml" />
+        <suite-file path="CartTestSuite.xml" />
+        <suite-file path="E2ESuite.xml" />
+        <suite-file path="Home_Nav_Suite.xml" />
+        <suite-file path="ModalTestSuite.xml" />
+        <suite-file path="ProductTestSuite.xml" />
+        <suite-file path="SmokeSuite.xml" />
+        <suite-file path="UITestSuite.xml" />
+        <suite-file path="RegressionSuite.xml" />
+    </suite-files>
+
+</suite>

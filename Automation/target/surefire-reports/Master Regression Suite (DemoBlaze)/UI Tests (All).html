@@ -1,0 +1,592 @@
+<html>
+<head>
+<title>TestNG:  UI Tests (All)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UI Tests (All)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>64/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 10 22:02:57 EET 2025</td>
+</tr>
+<tr><td>Total time:</td><td>495 seconds (495860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testPrevButtonHiddenOnFirstPage()'><b>testPrevButtonHiddenOnFirstPage</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify 'Previous' button is not displayed on the first page</td>
+<td><div><pre>java.lang.AssertionError: &apos;Previous&apos; button IS visible on the first page. expected [false] but found [true]
+	at com.spacetest.demoblaze.tests.CategoryMenuTest.testPrevButtonHiddenOnFirstPage(CategoryMenuTest.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1610429917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1610429917'><pre>java.lang.AssertionError: &apos;Previous&apos; button IS visible on the first page. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.spacetest.demoblaze.tests.CategoryMenuTest.testPrevButtonHiddenOnFirstPage(CategoryMenuTest.java:105)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testCurrencyConsistency()'><b>testCurrencyConsistency</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_16: Verify currency consistency</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Currency symbol missing in cart. expected [true] but found [false],
+	Price in cart does not match price on homepage. expected [$360] but found [360]
+	at com.spacetest.demoblaze.tests.CartPageTest.testCurrencyConsistency(CartPageTest.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963943166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963943166'><pre>java.lang.AssertionError: The following asserts failed:
+	Currency symbol missing in cart. expected [true] but found [false],
+	Price in cart does not match price on homepage. expected [$360] but found [360]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.spacetest.demoblaze.tests.CartPageTest.testCurrencyConsistency(CartPageTest.java:178)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testPaginationNavigation()'><b>testPaginationNavigation</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify clicking 'Next' and 'Previous' navigates pages</td>
+<td><div><pre>java.lang.AssertionError: Product list after clicking &apos;Previous&apos; does not match the original Page 1 list.: Lists differ at element [0]: Nokia lumia 1520 != Samsung galaxy s6 expected [Nokia lumia 1520] but found [Samsung galaxy s6]
+	at com.spacetest.demoblaze.tests.CategoryMenuTest.testPaginationNavigation(CategoryMenuTest.java:143)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409848581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409848581'><pre>java.lang.AssertionError: Product list after clicking &apos;Previous&apos; does not match the original Page 1 list.: Lists differ at element [0]: Nokia lumia 1520 != Samsung galaxy s6 expected [Nokia lumia 1520] but found [Samsung galaxy s6]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1656)
+	at com.spacetest.demoblaze.tests.CategoryMenuTest.testPaginationNavigation(CategoryMenuTest.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_02: Verify login fails with incorrect credentials<br>Parameters: invalidUser, test123, User does not exist.</td>
+<td><div><pre>java.lang.AssertionError: expected [User does not exist.] but found [Wrong password.]
+	at com.spacetest.demoblaze.tests.LoginPageTest.testInvalidLogin(LoginPageTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace702028834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace702028834'><pre>java.lang.AssertionError: expected [User does not exist.] but found [Wrong password.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.spacetest.demoblaze.tests.LoginPageTest.testInvalidLogin(LoginPageTest.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testCategoryProducts()'><b>testCategoryProducts</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify categories show correct products<br>Parameters: Monitors, Apple monitor 24</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testProductDetailsAndTotal()'><b>testProductDetailsAndTotal</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_02, CP_03: Verify product details and total price</td>
+<td></td>
+<td>7</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testSessionPersistence()'><b>testSessionPersistence</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_07: Verify session remains logged in after refresh</td>
+<td></td>
+<td>4</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testMultipleOrders()'><b>testMultipleOrders</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO08: Verify user can place multiple orders sequentially</td>
+<td></td>
+<td>13</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testAllProductDetailsArePresent()'><b>testAllProductDetailsArePresent</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify all product details (name, price, image, description) are displayed</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testNavHomeFromCart()'><b>testNavHomeFromCart</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_12: Verify 'Home' button from cart</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testSignupLink()'><b>testSignupLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Sign up' opens the Sign up modal</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.AboutUsModalTest.testAboutUsModalUI()'><b>testAboutUsModalUI</b><br>Test class: com.spacetest.demoblaze.tests.AboutUsModalTest<br>Test method: AU05: Verify the presence of About Us elements</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testPurchaseConfirmationDetails()'><b>testPurchaseConfirmationDetails</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO09: Verify purchase confirmation contains correct details</td>
+<td></td>
+<td>8</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_02: Verify login fails with incorrect credentials<br>Parameters: testuser, wrongpass, Wrong password.</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginWithEmptyFields()'><b>testLoginWithEmptyFields</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_03: Verify login fails when fields are empty<br>Parameters: , , Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testPasswordMasking()'><b>testPasswordMasking</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_10: Verify password field is masked</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginModalResponsive()'><b>testLoginModalResponsive</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_15: Verify login popup responsiveness on mobile</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testCartLayoutOnMobile()'><b>testCartLayoutOnMobile</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_11: Verify cart layout on mobile</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ResponsiveLayoutTest.testLayoutAdjustsOnResize()'><b>testLayoutAdjustsOnResize</b><br>Test class: com.spacetest.demoblaze.tests.ResponsiveLayoutTest<br>Test method: Verify responsive layout behavior when resizing browser window</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testInvalidSignup()'><b>testInvalidSignup</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials<br>Parameters: , , Please fill out Username and Password.</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ContactModalTest.testValidContactForm()'><b>testValidContactForm</b><br>Test class: com.spacetest.demoblaze.tests.ContactModalTest<br>Test method: CF01: Verify contact form works correctly with valid data</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.ContactModalTest@413d1baf</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testLogoLink()'><b>testLogoLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Logo' navigates to the homepage</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testValidOrder()'><b>testValidOrder</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO01: Verify valid order can be placed successfully</td>
+<td></td>
+<td>8</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ContactModalTest.testContactModalUI()'><b>testContactModalUI</b><br>Test class: com.spacetest.demoblaze.tests.ContactModalTest<br>Test method: CF10: Verify the presence of contact elements</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.ContactModalTest@413d1baf</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testInvalidSignup()'><b>testInvalidSignup</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials<br>Parameters: testuser123, , Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testInvalidSignup()'><b>testInvalidSignup</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials<br>Parameters: , testpass123, Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.AboutUsModalTest.testCloseIcon()'><b>testCloseIcon</b><br>Test class: com.spacetest.demoblaze.tests.AboutUsModalTest<br>Test method: AU03: Verify 'close' icon will close About Us window</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginButtonDisabled()'><b>testLoginButtonDisabled</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_08: Verify login button disabled until fields filled</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testContactLink()'><b>testContactLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Contact' opens the contact modal</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductSliderTest.testCarouselArrowNavigation()'><b>testCarouselArrowNavigation</b><br>Test class: com.spacetest.demoblaze.tests.ProductSliderTest<br>Test method: Verify slider arrows change images on click</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.ProductSliderTest@5032714f</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginWithEmptyFields()'><b>testLoginWithEmptyFields</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_03: Verify login fails when fields are empty<br>Parameters: testuser, , Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testCloseButtonOnPlaceOrderModal()'><b>testCloseButtonOnPlaceOrderModal</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO06: Validate 'Close' button behavior</td>
+<td></td>
+<td>6</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ContactModalTest.testCloseButton()'><b>testCloseButton</b><br>Test class: com.spacetest.demoblaze.tests.ContactModalTest<br>Test method: CF07, CF08: Verify 'Close' button functionality</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.ContactModalTest@413d1baf</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testCloseButton()'><b>testCloseButton</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_05: Verify close button functionality</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testCartPersistenceAfterLogin()'><b>testCartPersistenceAfterLogin</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_09: Verify cart persistence after logout/login</td>
+<td></td>
+<td>13</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductPageTest.testNavBetweenProducts()'><b>testNavBetweenProducts</b><br>Test class: com.spacetest.demoblaze.tests.ProductPageTest<br>Test method: PD_06: Verify navigation between products</td>
+<td></td>
+<td>6</td>
+<td>com.spacetest.demoblaze.tests.ProductPageTest@5524cca1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.AboutUsModalTest.testVideoPlayback()'><b>testVideoPlayback</b><br>Test class: com.spacetest.demoblaze.tests.AboutUsModalTest<br>Test method: AU01: Verify that About Us window video play when click on play button</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testDuplicateProductAdd()'><b>testDuplicateProductAdd</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_14: Verify duplicate product add</td>
+<td></td>
+<td>9</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginWithEmptyFields()'><b>testLoginWithEmptyFields</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_03: Verify login fails when fields are empty<br>Parameters: , test123, Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductPageTest.testProductPageRefresh()'><b>testProductPageRefresh</b><br>Test class: com.spacetest.demoblaze.tests.ProductPageTest<br>Test method: PD_09: Verify product page refresh</td>
+<td></td>
+<td>3</td>
+<td>com.spacetest.demoblaze.tests.ProductPageTest@5524cca1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductPageTest.testProductDetailsAreCorrect()'><b>testProductDetailsAreCorrect</b><br>Test class: com.spacetest.demoblaze.tests.ProductPageTest<br>Test method: PD_01, PD_02, PD_03: Verify product details page info is correct</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.ProductPageTest@5524cca1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLoginModalUI()'><b>testLoginModalUI</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_04: Verify login popup UI elements</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testInvalidOrderEmptyFields()'><b>testInvalidOrderEmptyFields</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO02: Verify order cannot be placed with empty fields</td>
+<td></td>
+<td>4</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testCartIsEmptyAfterOrder()'><b>testCartIsEmptyAfterOrder</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO07: Verify cart is empty after order completion</td>
+<td></td>
+<td>18</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testValidSignup()'><b>testValidSignup</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU01: Verify successful sign up with valid credentials<br>Parameters: org.testng.TestRunner@730b8cfa</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testRemovingProduct()'><b>testRemovingProduct</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_04, CP_17: Verify removing product</td>
+<td></td>
+<td>17</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testHomeLink()'><b>testHomeLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Home' navigates to the homepage</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.FooterTest.testFooterInformationIsCorrect()'><b>testFooterInformationIsCorrect</b><br>Test class: com.spacetest.demoblaze.tests.FooterTest<br>Test method: Verify that the information in the footer is correct</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.FooterTest@16eb3ea3</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductSliderTest.testCarouselAutoSlide()'><b>testCarouselAutoSlide</b><br>Test class: com.spacetest.demoblaze.tests.ProductSliderTest<br>Test method: Verify slider changes images automatically</td>
+<td></td>
+<td>5</td>
+<td>com.spacetest.demoblaze.tests.ProductSliderTest@5032714f</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductPageTest.testNavToHomeFromProductPage()'><b>testNavToHomeFromProductPage</b><br>Test class: com.spacetest.demoblaze.tests.ProductPageTest<br>Test method: PD_05: Verify navigation back to homepage</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.ProductPageTest@5524cca1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testSignupModalUI()'><b>testSignupModalUI</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU12: Verify UI presence of sign up elements</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testInvalidSignup()'><b>testInvalidSignup</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials<br>Parameters: migaman123, test123, This user already exist.</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.AboutUsModalTest.testCloseButton()'><b>testCloseButton</b><br>Test class: com.spacetest.demoblaze.tests.AboutUsModalTest<br>Test method: AU02: Verify 'close' button will close About Us window</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testCategoryProducts()'><b>testCategoryProducts</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify categories show correct products<br>Parameters: Phones, Samsung galaxy s6</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testCartPersistenceAfterRefresh()'><b>testCartPersistenceAfterRefresh</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_08: Verify cart persistence after refresh</td>
+<td></td>
+<td>8</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testLoginLink()'><b>testLoginLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Login' opens the Login modal</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ResponsiveLayoutTest.testProductsLayoutOnMobile()'><b>testProductsLayoutOnMobile</b><br>Test class: com.spacetest.demoblaze.tests.ResponsiveLayoutTest<br>Test method: Verify responsive layout on mobile devices</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testValidLogin()'><b>testValidLogin</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_01: Verify successful login with valid credentials</td>
+<td></td>
+<td>3</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testAboutUsLink()'><b>testAboutUsLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'About Us' opens the About Us modal</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CartPageTest.testCartPageNavigation()'><b>testCartPageNavigation</b><br>Test class: com.spacetest.demoblaze.tests.CartPageTest<br>Test method: CP_01: Verify cart page navigation</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.CartPageTest@645aa696</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testCategoryProducts()'><b>testCategoryProducts</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify categories show correct products<br>Parameters: Laptops, Sony vaio i5</td>
+<td></td>
+<td>2</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.CategoryMenuTest.testClickProductImageNavigates()'><b>testClickProductImageNavigates</b><br>Test class: com.spacetest.demoblaze.tests.CategoryMenuTest<br>Test method: Verify clicking a product image navigates to the correct product page</td>
+<td></td>
+<td>3</td>
+<td>com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.ProductPageTest.testAddToCart()'><b>testAddToCart</b><br>Test class: com.spacetest.demoblaze.tests.ProductPageTest<br>Test method: PD_04, PD_07, PD_08: Verify 'Add to Cart' functionality (with alert)</td>
+<td></td>
+<td>4</td>
+<td>com.spacetest.demoblaze.tests.ProductPageTest@5524cca1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.PlaceOrderTest.testOrderWithEmptyCart()'><b>testOrderWithEmptyCart</b><br>Test class: com.spacetest.demoblaze.tests.PlaceOrderTest<br>Test method: PO03: Verify order cannot be placed without selecting a product</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.SignupPageTest.testCloseButton()'><b>testCloseButton</b><br>Test class: com.spacetest.demoblaze.tests.SignupPageTest<br>Test method: SU09, SU10: Verify 'Close' button functionality</td>
+<td></td>
+<td>1</td>
+<td>com.spacetest.demoblaze.tests.SignupPageTest@353352b6</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testLogout()'><b>testLogout</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_12: Verify logout functionality</td>
+<td></td>
+<td>7</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.NavigationBarTest.testCartLink()'><b>testCartLink</b><br>Test class: com.spacetest.demoblaze.tests.NavigationBarTest<br>Test method: Verify clicking the 'Cart' navigates to the cartpage</td>
+<td></td>
+<td>0</td>
+<td>com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1</td></tr>
+<tr>
+<td title='com.spacetest.demoblaze.tests.LoginPageTest.testValidLoginWithNewUser()'><b>testValidLoginWithNewUser</b><br>Test class: com.spacetest.demoblaze.tests.LoginPageTest<br>Test method: LP_01: Verify successful login with newly created credentials<br>Parameters: org.testng.TestRunner@730b8cfa</td>
+<td></td>
+<td>3</td>
+<td>com.spacetest.demoblaze.tests.LoginPageTest@273444fe</td></tr>
+</table><p>
+</body>
+</html>

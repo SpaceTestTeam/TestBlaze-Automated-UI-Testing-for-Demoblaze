@@ -1,155 +1,1178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="77" passed="73" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-25T20:03:05 EEST" name="Surefire suite" finished-at="2025-10-25T20:03:55 EEST" duration-ms="50385">
+  <suite started-at="2025-11-10T22:02:57 EET" name="Master Regression Suite (DemoBlaze)" finished-at="2025-11-10T22:11:24 EET" duration-ms="507366">
     <groups>
+      <group name="ProductPage">
+        <method signature="ProductPageTest.testAddToCart()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testAddToCart" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testNavBetweenProducts()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testNavBetweenProducts" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testNavToHomeFromProductPage()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testNavToHomeFromProductPage" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testProductDetailsAreCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testProductDetailsAreCorrect" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testProductPageRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testProductPageRefresh" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+      </group> <!-- ProductPage -->
+      <group name="Responsive">
+        <method signature="LoginPageTest.testLoginModalResponsive()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginModalResponsive" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="ResponsiveLayoutTest.testLayoutAdjustsOnResize()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" name="testLayoutAdjustsOnResize" class="com.spacetest.demoblaze.tests.ResponsiveLayoutTest"/>
+        <method signature="ResponsiveLayoutTest.testProductsLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" name="testProductsLayoutOnMobile" class="com.spacetest.demoblaze.tests.ResponsiveLayoutTest"/>
+        <method signature="CartPageTest.testCartLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartLayoutOnMobile" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+      </group> <!-- Responsive -->
+      <group name="Signup">
+        <method signature="SignupPageTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testCloseButton" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="SignupPageTest.testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testInvalidSignup" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="SignupPageTest.testSignupModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testSignupModalUI" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="SignupPageTest.testValidSignup(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testValidSignup" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+      </group> <!-- Signup -->
+      <group name="Navigation">
+        <method signature="CartPageTest.testNavHomeFromCart()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testNavHomeFromCart" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+      </group> <!-- Navigation -->
       <group name="Categories">
-        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testAllProductDetailsArePresent()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testAllProductDetailsArePresent" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testClickProductImageNavigates()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testClickProductImageNavigates" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
       </group> <!-- Categories -->
       <group name="Carousel">
-        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
-        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
       </group> <!-- Carousel -->
-      <group name="NavBar">
-        <method signature="NavigationBarTest.testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testAboutUsLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testCartLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testHomeLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLogoLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-      </group> <!-- NavBar -->
+      <group name="AboutUs">
+        <method signature="AboutUsModalTest.testAboutUsModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testAboutUsModalUI" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="AboutUsModalTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testCloseButton" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="AboutUsModalTest.testCloseIcon()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testCloseIcon" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="AboutUsModalTest.testVideoPlayback()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testVideoPlayback" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+      </group> <!-- AboutUs -->
       <group name="Regression">
-        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
-        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
-        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="LoginPageTest.testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testInvalidLogin" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginWithEmptyFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginWithEmptyFields" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testPasswordMasking()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testPasswordMasking" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testSessionPersistence()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testSessionPersistence" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="PlaceOrderTest.testCartIsEmptyAfterOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testCartIsEmptyAfterOrder" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testCloseButtonOnPlaceOrderModal()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testCloseButtonOnPlaceOrderModal" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testInvalidOrderEmptyFields()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testInvalidOrderEmptyFields" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testMultipleOrders()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testMultipleOrders" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testOrderWithEmptyCart()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testOrderWithEmptyCart" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testPurchaseConfirmationDetails()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testPurchaseConfirmationDetails" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="ProductPageTest.testNavBetweenProducts()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testNavBetweenProducts" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testNavToHomeFromProductPage()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testNavToHomeFromProductPage" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testProductPageRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testProductPageRefresh" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductSliderTest.testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" name="testCarouselArrowNavigation" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ProductSliderTest.testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" name="testCarouselAutoSlide" class="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        <method signature="ResponsiveLayoutTest.testLayoutAdjustsOnResize()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" name="testLayoutAdjustsOnResize" class="com.spacetest.demoblaze.tests.ResponsiveLayoutTest"/>
+        <method signature="ResponsiveLayoutTest.testProductsLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" name="testProductsLayoutOnMobile" class="com.spacetest.demoblaze.tests.ResponsiveLayoutTest"/>
+        <method signature="SignupPageTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testCloseButton" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="SignupPageTest.testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testInvalidSignup" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="AboutUsModalTest.testCloseIcon()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testCloseIcon" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="AboutUsModalTest.testVideoPlayback()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testVideoPlayback" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="CartPageTest.testCartPersistenceAfterLogin()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPersistenceAfterLogin" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCartPersistenceAfterRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPersistenceAfterRefresh" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCurrencyConsistency()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCurrencyConsistency" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testDuplicateProductAdd()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testDuplicateProductAdd" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testRemovingProduct()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testRemovingProduct" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CategoryMenuTest.testAllProductDetailsArePresent()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testAllProductDetailsArePresent" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testCategoryProducts" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testClickProductImageNavigates()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testClickProductImageNavigates" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testPaginationNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testPaginationNavigation" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testPrevButtonHiddenOnFirstPage()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testPrevButtonHiddenOnFirstPage" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="ContactModalTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testCloseButton" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+        <method signature="FooterTest.testFooterInformationIsCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.FooterTest@16eb3ea3]" name="testFooterInformationIsCorrect" class="com.spacetest.demoblaze.tests.FooterTest"/>
+        <method signature="LoginPageTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testCloseButton" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginButtonDisabled()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginButtonDisabled" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
-        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="PlaceOrderTest.testValidOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testValidOrder" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="ProductPageTest.testAddToCart()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testAddToCart" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="ProductPageTest.testProductDetailsAreCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" name="testProductDetailsAreCorrect" class="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        <method signature="SignupPageTest.testValidSignup(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testValidSignup" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="LoginPageTest.testValidLoginWithNewUser(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testValidLoginWithNewUser" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="AboutUsModalTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testCloseButton" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="CartPageTest.testCartPageNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPageNavigation" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testProductDetailsAndTotal()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testProductDetailsAndTotal" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="ContactModalTest.testValidContactForm()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testValidContactForm" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+        <method signature="LoginPageTest.testLogout()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLogout" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testValidLogin()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testValidLogin" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
       </group> <!-- Smoke -->
+      <group name="Login">
+        <method signature="LoginPageTest.testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testInvalidLogin" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginModalResponsive()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginModalResponsive" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginWithEmptyFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginWithEmptyFields" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testPasswordMasking()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testPasswordMasking" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testSessionPersistence()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testSessionPersistence" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testValidLoginWithNewUser(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testValidLoginWithNewUser" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testCloseButton" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginButtonDisabled()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginButtonDisabled" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLoginModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginModalUI" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testLogout()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLogout" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.testValidLogin()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testValidLogin" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+      </group> <!-- Login -->
+      <group name="Contact">
+        <method signature="ContactModalTest.testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testCloseButton" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+        <method signature="ContactModalTest.testContactModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testContactModalUI" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+        <method signature="ContactModalTest.testValidContactForm()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testValidContactForm" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+      </group> <!-- Contact -->
+      <group name="Pagination">
+        <method signature="CategoryMenuTest.testPaginationNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testPaginationNavigation" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+        <method signature="CategoryMenuTest.testPrevButtonHiddenOnFirstPage()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" name="testPrevButtonHiddenOnFirstPage" class="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+      </group> <!-- Pagination -->
+      <group name="PlaceOrder">
+        <method signature="PlaceOrderTest.testCartIsEmptyAfterOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testCartIsEmptyAfterOrder" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testCloseButtonOnPlaceOrderModal()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testCloseButtonOnPlaceOrderModal" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testInvalidOrderEmptyFields()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testInvalidOrderEmptyFields" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testMultipleOrders()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testMultipleOrders" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testOrderWithEmptyCart()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testOrderWithEmptyCart" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testPurchaseConfirmationDetails()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testPurchaseConfirmationDetails" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+        <method signature="PlaceOrderTest.testValidOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" name="testValidOrder" class="com.spacetest.demoblaze.tests.PlaceOrderTest"/>
+      </group> <!-- PlaceOrder -->
+      <group name="UI">
+        <method signature="SignupPageTest.testSignupModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" name="testSignupModalUI" class="com.spacetest.demoblaze.tests.SignupPageTest"/>
+        <method signature="AboutUsModalTest.testAboutUsModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" name="testAboutUsModalUI" class="com.spacetest.demoblaze.tests.AboutUsModalTest"/>
+        <method signature="ContactModalTest.testContactModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" name="testContactModalUI" class="com.spacetest.demoblaze.tests.ContactModalTest"/>
+        <method signature="LoginPageTest.testLoginModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" name="testLoginModalUI" class="com.spacetest.demoblaze.tests.LoginPageTest"/>
+      </group> <!-- UI -->
+      <group name="NavBar">
+        <method signature="NavigationBarTest.testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testAboutUsLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testCartLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testContactLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testHomeLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testLoginLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testLogoLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+        <method signature="NavigationBarTest.testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" name="testSignupLink" class="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+      </group> <!-- NavBar -->
+      <group name="Footer">
+        <method signature="FooterTest.testFooterInformationIsCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.FooterTest@16eb3ea3]" name="testFooterInformationIsCorrect" class="com.spacetest.demoblaze.tests.FooterTest"/>
+      </group> <!-- Footer -->
+      <group name="Cart">
+        <method signature="CartPageTest.testCartLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartLayoutOnMobile" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCartPageNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPageNavigation" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCartPersistenceAfterLogin()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPersistenceAfterLogin" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCartPersistenceAfterRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCartPersistenceAfterRefresh" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testCurrencyConsistency()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testCurrencyConsistency" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testDuplicateProductAdd()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testDuplicateProductAdd" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testNavHomeFromCart()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testNavHomeFromCart" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testProductDetailsAndTotal()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testProductDetailsAndTotal" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+        <method signature="CartPageTest.testRemovingProduct()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" name="testRemovingProduct" class="com.spacetest.demoblaze.tests.CartPageTest"/>
+      </group> <!-- Cart -->
     </groups>
-    <test started-at="2025-10-25T20:03:05 EEST" name="Surefire test" finished-at="2025-10-25T20:03:55 EEST" duration-ms="50385">
-      <class name="com.spacetest.demoblaze.tests.ProductSliderTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:41 EEST" name="setUp" finished-at="2025-10-25T20:03:43 EEST" duration-ms="2104" status="PASS">
+    <test started-at="2025-11-10T22:02:57 EET" name="UI Tests (All)" finished-at="2025-11-10T22:11:13 EET" duration-ms="495860">
+      <class name="com.spacetest.demoblaze.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:01 EET" name="setUp" finished-at="2025-11-10T22:06:05 EET" duration-ms="4222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:43 EEST" name="testCarouselArrowNavigation" description="Verify slider arrows change images on click" finished-at="2025-10-25T20:03:45 EEST" duration-ms="2273" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:05 EET" name="testInvalidLogin" description="LP_02: Verify login fails with incorrect credentials" data-provider="invalidLoginData" finished-at="2025-11-10T22:06:08 EET" duration-ms="2221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wrong password.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCarouselArrowNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:45 EEST" name="tearDown" finished-at="2025-10-25T20:03:45 EEST" duration-ms="327" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:08 EET" name="tearDown" finished-at="2025-11-10T22:06:08 EET" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:45 EEST" name="setUp" finished-at="2025-10-25T20:03:49 EEST" duration-ms="3733" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:08 EET" name="setUp" finished-at="2025-11-10T22:06:11 EET" duration-ms="2910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:49 EEST" name="testCarouselAutoSlide" description="Verify slider changes images automatically" finished-at="2025-10-25T20:03:55 EEST" duration-ms="5728" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:11 EET" name="testInvalidLogin" description="LP_02: Verify login fails with incorrect credentials" data-provider="invalidLoginData" finished-at="2025-11-10T22:06:13 EET" duration-ms="2265" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exist.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [User does not exist.] but found [Wrong password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [User does not exist.] but found [Wrong password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.spacetest.demoblaze.tests.LoginPageTest.testInvalidLogin(LoginPageTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:13 EET" name="tearDown" finished-at="2025-11-10T22:06:14 EET" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:14 EET" name="setUp" finished-at="2025-11-10T22:06:17 EET" duration-ms="3392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginModalResponsive()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:17 EET" name="testLoginModalResponsive" description="LP_15: Verify login popup responsiveness on mobile" finished-at="2025-11-10T22:06:19 EET" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginModalResponsive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:19 EET" name="tearDown" finished-at="2025-11-10T22:06:19 EET" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:19 EET" name="setUp" finished-at="2025-11-10T22:06:23 EET" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithEmptyFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:23 EET" name="testLoginWithEmptyFields" description="LP_03: Verify login fails when fields are empty" data-provider="emptyLoginData" finished-at="2025-11-10T22:06:24 EET" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:24 EET" name="tearDown" finished-at="2025-11-10T22:06:24 EET" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:24 EET" name="setUp" finished-at="2025-11-10T22:06:27 EET" duration-ms="3269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithEmptyFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:27 EET" name="testLoginWithEmptyFields" description="LP_03: Verify login fails when fields are empty" data-provider="emptyLoginData" finished-at="2025-11-10T22:06:29 EET" duration-ms="1212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:29 EET" name="tearDown" finished-at="2025-11-10T22:06:29 EET" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:29 EET" name="setUp" finished-at="2025-11-10T22:06:34 EET" duration-ms="4508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithEmptyFields(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:34 EET" name="testLoginWithEmptyFields" description="LP_03: Verify login fails when fields are empty" data-provider="emptyLoginData" finished-at="2025-11-10T22:06:35 EET" duration-ms="1164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:35 EET" name="tearDown" finished-at="2025-11-10T22:06:35 EET" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:35 EET" name="setUp" finished-at="2025-11-10T22:06:38 EET" duration-ms="2730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordMasking()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:38 EET" name="testPasswordMasking" description="LP_10: Verify password field is masked" finished-at="2025-11-10T22:06:39 EET" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:39 EET" name="tearDown" finished-at="2025-11-10T22:06:40 EET" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:40 EET" name="setUp" finished-at="2025-11-10T22:06:43 EET" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSessionPersistence()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:43 EET" name="testSessionPersistence" description="LP_07: Verify session remains logged in after refresh" finished-at="2025-11-10T22:06:48 EET" duration-ms="4746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSessionPersistence -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:48 EET" name="tearDown" finished-at="2025-11-10T22:06:48 EET" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:48 EET" name="setUp" finished-at="2025-11-10T22:06:51 EET" duration-ms="3100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:51 EET" name="testCloseButton" description="LP_05: Verify close button functionality" finished-at="2025-11-10T22:06:53 EET" duration-ms="1411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:53 EET" name="tearDown" finished-at="2025-11-10T22:06:53 EET" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:53 EET" name="setUp" finished-at="2025-11-10T22:06:56 EET" duration-ms="3297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginButtonDisabled()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:57 EET" name="testLoginButtonDisabled" description="LP_08: Verify login button disabled until fields filled" finished-at="2025-11-10T22:06:58 EET" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginButtonDisabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:58 EET" name="tearDown" finished-at="2025-11-10T22:06:59 EET" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:06:59 EET" name="setUp" finished-at="2025-11-10T22:07:03 EET" duration-ms="4498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:03 EET" name="testLoginModalUI" description="LP_04: Verify login popup UI elements" finished-at="2025-11-10T22:07:05 EET" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginModalUI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:05 EET" name="tearDown" finished-at="2025-11-10T22:07:05 EET" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:05 EET" name="setUp" finished-at="2025-11-10T22:07:12 EET" duration-ms="7332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:12 EET" name="testLogout" description="LP_12: Verify logout functionality" finished-at="2025-11-10T22:07:20 EET" duration-ms="7520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:20 EET" name="tearDown" finished-at="2025-11-10T22:07:21 EET" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:21 EET" name="setUp" finished-at="2025-11-10T22:07:24 EET" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:24 EET" name="testValidLogin" description="LP_01: Verify successful login with valid credentials" finished-at="2025-11-10T22:07:27 EET" duration-ms="3038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:07:27 EET" name="tearDown" finished-at="2025-11-10T22:07:28 EET" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:11:07 EET" name="setUp" finished-at="2025-11-10T22:11:09 EET" duration-ms="2360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLoginWithNewUser(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:11:09 EET" name="testValidLoginWithNewUser" description="LP_01: Verify successful login with newly created credentials" finished-at="2025-11-10T22:11:12 EET" depends-on-methods="com.spacetest.demoblaze.tests.SignupPageTest.testValidSignup" duration-ms="3433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@730b8cfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLoginWithNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.LoginPageTest@273444fe]" started-at="2025-11-10T22:11:12 EET" name="tearDown" finished-at="2025-11-10T22:11:13 EET" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.LoginPageTest -->
+      <class name="com.spacetest.demoblaze.tests.ContactModalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:37 EET" name="setUp" finished-at="2025-11-10T22:05:41 EET" duration-ms="3378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:41 EET" name="testCloseButton" description="CF07, CF08: Verify &#039;Close&#039; button functionality" finished-at="2025-11-10T22:05:42 EET" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:42 EET" name="tearDown" finished-at="2025-11-10T22:05:43 EET" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:43 EET" name="setUp" finished-at="2025-11-10T22:05:46 EET" duration-ms="3206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:46 EET" name="testContactModalUI" description="CF10: Verify the presence of contact elements" finished-at="2025-11-10T22:05:47 EET" duration-ms="1503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactModalUI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:47 EET" name="tearDown" finished-at="2025-11-10T22:05:48 EET" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:48 EET" name="setUp" finished-at="2025-11-10T22:05:54 EET" duration-ms="5836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidContactForm()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:54 EET" name="testValidContactForm" description="CF01: Verify contact form works correctly with valid data" finished-at="2025-11-10T22:05:56 EET" duration-ms="2316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidContactForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ContactModalTest@413d1baf]" started-at="2025-11-10T22:05:56 EET" name="tearDown" finished-at="2025-11-10T22:05:57 EET" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.ContactModalTest -->
+      <class name="com.spacetest.demoblaze.tests.ResponsiveLayoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:24 EET" name="setUp" finished-at="2025-11-10T22:10:28 EET" duration-ms="3999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLayoutAdjustsOnResize()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:28 EET" name="testLayoutAdjustsOnResize" description="Verify responsive layout behavior when resizing browser window" finished-at="2025-11-10T22:10:28 EET" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLayoutAdjustsOnResize -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:28 EET" name="tearDown" finished-at="2025-11-10T22:10:29 EET" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:29 EET" name="setUp" finished-at="2025-11-10T22:10:31 EET" duration-ms="2406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductsLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:31 EET" name="testProductsLayoutOnMobile" description="Verify responsive layout on mobile devices" finished-at="2025-11-10T22:10:33 EET" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductsLayoutOnMobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ResponsiveLayoutTest@48bb62]" started-at="2025-11-10T22:10:33 EET" name="tearDown" finished-at="2025-11-10T22:10:34 EET" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.ResponsiveLayoutTest -->
+      <class name="com.spacetest.demoblaze.tests.ProductSliderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:09 EET" name="setUp" finished-at="2025-11-10T22:10:12 EET" duration-ms="3163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCarouselArrowNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:12 EET" name="testCarouselArrowNavigation" description="Verify slider arrows change images on click" finished-at="2025-11-10T22:10:15 EET" duration-ms="2482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCarouselArrowNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:15 EET" name="tearDown" finished-at="2025-11-10T22:10:15 EET" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:15 EET" name="setUp" finished-at="2025-11-10T22:10:18 EET" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCarouselAutoSlide()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:18 EET" name="testCarouselAutoSlide" description="Verify slider changes images automatically" finished-at="2025-11-10T22:10:24 EET" duration-ms="5871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCarouselAutoSlide -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@7c24b813]" started-at="2025-10-25T20:03:55 EEST" name="tearDown" finished-at="2025-10-25T20:03:55 EEST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductSliderTest@5032714f]" started-at="2025-11-10T22:10:24 EET" name="tearDown" finished-at="2025-11-10T22:10:24 EET" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.spacetest.demoblaze.tests.ProductSliderTest -->
-      <class name="com.spacetest.demoblaze.tests.NavigationBarTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:19 EEST" name="setUp" finished-at="2025-10-25T20:03:21 EEST" duration-ms="2028" status="PASS">
+      <class name="com.spacetest.demoblaze.tests.ProductPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:32 EET" name="setUp" finished-at="2025-11-10T22:09:35 EET" duration-ms="2596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:21 EEST" name="testAboutUsLink" description="Verify clicking the &#039;About Us&#039; opens the About Us modal" finished-at="2025-10-25T20:03:21 EEST" duration-ms="726" status="PASS">
+        <test-method signature="testAddToCart()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:35 EET" name="testAddToCart" description="PD_04, PD_07, PD_08: Verify &#039;Add to Cart&#039; functionality (with alert)" finished-at="2025-11-10T22:09:39 EET" duration-ms="4774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:39 EET" name="tearDown" finished-at="2025-11-10T22:09:40 EET" duration-ms="560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:40 EET" name="setUp" finished-at="2025-11-10T22:09:43 EET" duration-ms="3023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavBetweenProducts()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:43 EET" name="testNavBetweenProducts" description="PD_06: Verify navigation between products" finished-at="2025-11-10T22:09:50 EET" duration-ms="6576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavBetweenProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:50 EET" name="tearDown" finished-at="2025-11-10T22:09:50 EET" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:50 EET" name="setUp" finished-at="2025-11-10T22:09:53 EET" duration-ms="3023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavToHomeFromProductPage()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:53 EET" name="testNavToHomeFromProductPage" description="PD_05: Verify navigation back to homepage" finished-at="2025-11-10T22:09:56 EET" duration-ms="2849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavToHomeFromProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:56 EET" name="tearDown" finished-at="2025-11-10T22:09:56 EET" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:56 EET" name="setUp" finished-at="2025-11-10T22:09:59 EET" duration-ms="2860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductDetailsAreCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:09:59 EET" name="testProductDetailsAreCorrect" description="PD_01, PD_02, PD_03: Verify product details page info is correct" finished-at="2025-11-10T22:10:02 EET" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetailsAreCorrect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:10:02 EET" name="tearDown" finished-at="2025-11-10T22:10:02 EET" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:10:02 EET" name="setUp" finished-at="2025-11-10T22:10:05 EET" duration-ms="3082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductPageRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:10:05 EET" name="testProductPageRefresh" description="PD_09: Verify product page refresh" finished-at="2025-11-10T22:10:09 EET" duration-ms="3268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductPageRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.ProductPageTest@5524cca1]" started-at="2025-11-10T22:10:09 EET" name="tearDown" finished-at="2025-11-10T22:10:09 EET" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.ProductPageTest -->
+      <class name="com.spacetest.demoblaze.tests.NavigationBarTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:28 EET" name="setUp" finished-at="2025-11-10T22:07:31 EET" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAboutUsLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:31 EET" name="testAboutUsLink" description="Verify clicking the &#039;About Us&#039; opens the About Us modal" finished-at="2025-11-10T22:07:32 EET" duration-ms="1477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAboutUsLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:21 EEST" name="tearDown" finished-at="2025-10-25T20:03:22 EEST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:32 EET" name="tearDown" finished-at="2025-11-10T22:07:33 EET" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:22 EEST" name="setUp" finished-at="2025-10-25T20:03:23 EEST" duration-ms="1925" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:33 EET" name="setUp" finished-at="2025-11-10T22:07:36 EET" duration-ms="3640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:23 EEST" name="testCartLink" description="Verify clicking the &#039;Cart&#039; navigates to the cartpage" finished-at="2025-10-25T20:03:24 EEST" duration-ms="615" status="PASS">
+        <test-method signature="testCartLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:36 EET" name="testCartLink" description="Verify clicking the &#039;Cart&#039; navigates to the cartpage" finished-at="2025-11-10T22:07:37 EET" duration-ms="944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCartLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:24 EEST" name="tearDown" finished-at="2025-10-25T20:03:24 EEST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:37 EET" name="tearDown" finished-at="2025-11-10T22:07:38 EET" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:24 EEST" name="setUp" finished-at="2025-10-25T20:03:26 EEST" duration-ms="1999" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:38 EET" name="setUp" finished-at="2025-11-10T22:07:44 EET" duration-ms="6630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:26 EEST" name="testContactLink" description="Verify clicking the &#039;Contact&#039; opens the contact modal" finished-at="2025-10-25T20:03:27 EEST" duration-ms="698" status="PASS">
+        <test-method signature="testContactLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:44 EET" name="testContactLink" description="Verify clicking the &#039;Contact&#039; opens the contact modal" finished-at="2025-11-10T22:07:46 EET" duration-ms="1409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:27 EEST" name="tearDown" finished-at="2025-10-25T20:03:27 EEST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:46 EET" name="tearDown" finished-at="2025-11-10T22:07:46 EET" duration-ms="512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:27 EEST" name="setUp" finished-at="2025-10-25T20:03:29 EEST" duration-ms="2058" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:46 EET" name="setUp" finished-at="2025-11-10T22:07:50 EET" duration-ms="3183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:29 EEST" name="testHomeLink" description="Verify clicking the &#039;Home&#039; navigates to the homepage" finished-at="2025-10-25T20:03:30 EEST" duration-ms="440" status="PASS">
+        <test-method signature="testHomeLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:50 EET" name="testHomeLink" description="Verify clicking the &#039;Home&#039; navigates to the homepage" finished-at="2025-11-10T22:07:50 EET" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomeLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:30 EEST" name="tearDown" finished-at="2025-10-25T20:03:30 EEST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:50 EET" name="tearDown" finished-at="2025-11-10T22:07:50 EET" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:30 EEST" name="setUp" finished-at="2025-10-25T20:03:32 EEST" duration-ms="1848" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:50 EET" name="setUp" finished-at="2025-11-10T22:07:53 EET" duration-ms="2806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:32 EEST" name="testLoginLink" description="Verify clicking the &#039;Login&#039; opens the Login modal" finished-at="2025-10-25T20:03:33 EEST" duration-ms="689" status="PASS">
+        <test-method signature="testLoginLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:53 EET" name="testLoginLink" description="Verify clicking the &#039;Login&#039; opens the Login modal" finished-at="2025-11-10T22:07:54 EET" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:33 EEST" name="tearDown" finished-at="2025-10-25T20:03:33 EEST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:54 EET" name="tearDown" finished-at="2025-11-10T22:07:55 EET" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:33 EEST" name="setUp" finished-at="2025-10-25T20:03:37 EEST" duration-ms="3860" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:55 EET" name="setUp" finished-at="2025-11-10T22:07:58 EET" duration-ms="3175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="testLogoLink" description="Verify clicking the &#039;Logo&#039; navigates to the homepage" finished-at="2025-10-25T20:03:37 EEST" duration-ms="370" status="PASS">
+        <test-method signature="testLogoLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:07:58 EET" name="testLogoLink" description="Verify clicking the &#039;Logo&#039; navigates to the homepage" finished-at="2025-11-10T22:08:00 EET" duration-ms="2250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogoLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="tearDown" finished-at="2025-10-25T20:03:37 EEST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:08:00 EET" name="tearDown" finished-at="2025-11-10T22:08:00 EET" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:37 EEST" name="setUp" finished-at="2025-10-25T20:03:40 EEST" duration-ms="2436" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:08:00 EET" name="setUp" finished-at="2025-11-10T22:08:04 EET" duration-ms="3779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:40 EEST" name="testSignupLink" description="Verify clicking the &#039;Sign up&#039; opens the Sign up modal" finished-at="2025-10-25T20:03:40 EEST" duration-ms="677" status="PASS">
+        <test-method signature="testSignupLink()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:08:04 EET" name="testSignupLink" description="Verify clicking the &#039;Sign up&#039; opens the Sign up modal" finished-at="2025-11-10T22:08:05 EET" duration-ms="808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignupLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@25fb8912]" started-at="2025-10-25T20:03:40 EEST" name="tearDown" finished-at="2025-10-25T20:03:41 EEST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.NavigationBarTest@33bc72d1]" started-at="2025-11-10T22:08:05 EET" name="tearDown" finished-at="2025-11-10T22:08:05 EET" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.spacetest.demoblaze.tests.NavigationBarTest -->
-      <class name="com.spacetest.demoblaze.tests.CategoryMenuTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:05 EEST" name="setUp" finished-at="2025-10-25T20:03:08 EEST" duration-ms="3418" status="PASS">
+      <class name="com.spacetest.demoblaze.tests.SignupPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:34 EET" name="setUp" finished-at="2025-11-10T22:10:37 EET" duration-ms="2706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:08 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:10 EEST" duration-ms="1801" status="PASS">
+        <test-method signature="testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:37 EET" name="testCloseButton" description="SU09, SU10: Verify &#039;Close&#039; button functionality" finished-at="2025-11-10T22:10:38 EET" duration-ms="1388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:38 EET" name="tearDown" finished-at="2025-11-10T22:10:38 EET" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:38 EET" name="setUp" finished-at="2025-11-10T22:10:42 EET" duration-ms="3640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:42 EET" name="testInvalidSignup" description="SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials" data-provider="invalidSignupData" finished-at="2025-11-10T22:10:44 EET" duration-ms="2044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[migaman123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[This user already exist.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:44 EET" name="tearDown" finished-at="2025-11-10T22:10:44 EET" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:44 EET" name="setUp" finished-at="2025-11-10T22:10:47 EET" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:47 EET" name="testInvalidSignup" description="SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials" data-provider="invalidSignupData" finished-at="2025-11-10T22:10:48 EET" duration-ms="967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:48 EET" name="tearDown" finished-at="2025-11-10T22:10:48 EET" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:48 EET" name="setUp" finished-at="2025-11-10T22:10:51 EET" duration-ms="2339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:51 EET" name="testInvalidSignup" description="SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials" data-provider="invalidSignupData" finished-at="2025-11-10T22:10:52 EET" duration-ms="1045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testpass123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:52 EET" name="tearDown" finished-at="2025-11-10T22:10:52 EET" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:52 EET" name="setUp" finished-at="2025-11-10T22:10:55 EET" duration-ms="2760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidSignup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:55 EET" name="testInvalidSignup" description="SU02, SU03, SU04, SU05: Verify sign up fails with invalid/empty credentials" data-provider="invalidSignupData" finished-at="2025-11-10T22:10:56 EET" duration-ms="1055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out Username and Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:56 EET" name="tearDown" finished-at="2025-11-10T22:10:56 EET" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:56 EET" name="setUp" finished-at="2025-11-10T22:10:59 EET" duration-ms="3021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignupModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:10:59 EET" name="testSignupModalUI" description="SU12: Verify UI presence of sign up elements" finished-at="2025-11-10T22:11:01 EET" duration-ms="1455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupModalUI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:11:01 EET" name="tearDown" finished-at="2025-11-10T22:11:01 EET" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:11:01 EET" name="setUp" finished-at="2025-11-10T22:11:04 EET" duration-ms="2808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidSignup(org.testng.ITestContext)[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:11:04 EET" name="testValidSignup" description="SU01: Verify successful sign up with valid credentials" finished-at="2025-11-10T22:11:06 EET" duration-ms="2169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@730b8cfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidSignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.SignupPageTest@353352b6]" started-at="2025-11-10T22:11:06 EET" name="tearDown" finished-at="2025-11-10T22:11:07 EET" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.SignupPageTest -->
+      <class name="com.spacetest.demoblaze.tests.CartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:19 EET" name="setUp" finished-at="2025-11-10T22:03:22 EET" duration-ms="3232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartLayoutOnMobile()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:22 EET" name="testCartLayoutOnMobile" description="CP_11: Verify cart layout on mobile" finished-at="2025-11-10T22:03:24 EET" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartLayoutOnMobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:24 EET" name="tearDown" finished-at="2025-11-10T22:03:24 EET" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:24 EET" name="setUp" finished-at="2025-11-10T22:03:28 EET" duration-ms="3616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPageNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:28 EET" name="testCartPageNavigation" description="CP_01: Verify cart page navigation" finished-at="2025-11-10T22:03:29 EET" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:29 EET" name="tearDown" finished-at="2025-11-10T22:03:29 EET" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:29 EET" name="setUp" finished-at="2025-11-10T22:03:32 EET" duration-ms="2191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPersistenceAfterLogin()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:32 EET" name="testCartPersistenceAfterLogin" description="CP_09: Verify cart persistence after logout/login" finished-at="2025-11-10T22:03:45 EET" duration-ms="13687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPersistenceAfterLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:45 EET" name="tearDown" finished-at="2025-11-10T22:03:46 EET" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:46 EET" name="setUp" finished-at="2025-11-10T22:03:49 EET" duration-ms="3059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPersistenceAfterRefresh()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:49 EET" name="testCartPersistenceAfterRefresh" description="CP_08: Verify cart persistence after refresh" finished-at="2025-11-10T22:03:57 EET" duration-ms="8023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPersistenceAfterRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:57 EET" name="tearDown" finished-at="2025-11-10T22:03:57 EET" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:03:57 EET" name="setUp" finished-at="2025-11-10T22:04:00 EET" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCurrencyConsistency()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:00 EET" name="testCurrencyConsistency" description="CP_16: Verify currency consistency" finished-at="2025-11-10T22:04:07 EET" duration-ms="6874" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Currency symbol missing in cart. expected [true] but found [false],
+Price in cart does not match price on homepage. expected [$360] but found [360]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Currency symbol missing in cart. expected [true] but found [false],
+Price in cart does not match price on homepage. expected [$360] but found [360]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.spacetest.demoblaze.tests.CartPageTest.testCurrencyConsistency(CartPageTest.java:178)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCurrencyConsistency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:07 EET" name="tearDown" finished-at="2025-11-10T22:04:08 EET" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:08 EET" name="setUp" finished-at="2025-11-10T22:04:11 EET" duration-ms="3414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDuplicateProductAdd()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:11 EET" name="testDuplicateProductAdd" description="CP_14: Verify duplicate product add" finished-at="2025-11-10T22:04:21 EET" duration-ms="9889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDuplicateProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:21 EET" name="tearDown" finished-at="2025-11-10T22:04:22 EET" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:22 EET" name="setUp" finished-at="2025-11-10T22:04:25 EET" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavHomeFromCart()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:25 EET" name="testNavHomeFromCart" description="CP_12: Verify &#039;Home&#039; button from cart" finished-at="2025-11-10T22:04:26 EET" duration-ms="1331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavHomeFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:26 EET" name="tearDown" finished-at="2025-11-10T22:04:26 EET" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:26 EET" name="setUp" finished-at="2025-11-10T22:04:29 EET" duration-ms="2345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductDetailsAndTotal()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:29 EET" name="testProductDetailsAndTotal" description="CP_02, CP_03: Verify product details and total price" finished-at="2025-11-10T22:04:36 EET" duration-ms="7518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetailsAndTotal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:36 EET" name="tearDown" finished-at="2025-11-10T22:04:37 EET" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:37 EET" name="setUp" finished-at="2025-11-10T22:04:40 EET" duration-ms="2732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemovingProduct()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:40 EET" name="testRemovingProduct" description="CP_04, CP_17: Verify removing product" finished-at="2025-11-10T22:04:58 EET" duration-ms="17899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemovingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CartPageTest@645aa696]" started-at="2025-11-10T22:04:58 EET" name="tearDown" finished-at="2025-11-10T22:04:58 EET" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.CartPageTest -->
+      <class name="com.spacetest.demoblaze.tests.AboutUsModalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:02:57 EET" name="setUp" finished-at="2025-11-10T22:03:01 EET" duration-ms="3832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAboutUsModalUI()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:01 EET" name="testAboutUsModalUI" description="AU05: Verify the presence of About Us elements" finished-at="2025-11-10T22:03:03 EET" duration-ms="1721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAboutUsModalUI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:03 EET" name="tearDown" finished-at="2025-11-10T22:03:03 EET" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:03 EET" name="setUp" finished-at="2025-11-10T22:03:07 EET" duration-ms="4059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCloseButton()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:07 EET" name="testCloseButton" description="AU02: Verify &#039;close&#039; button will close About Us window" finished-at="2025-11-10T22:03:09 EET" duration-ms="1452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:09 EET" name="tearDown" finished-at="2025-11-10T22:03:09 EET" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:09 EET" name="setUp" finished-at="2025-11-10T22:03:12 EET" duration-ms="3135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCloseIcon()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:12 EET" name="testCloseIcon" description="AU03: Verify &#039;close&#039; icon will close About Us window" finished-at="2025-11-10T22:03:14 EET" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseIcon -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:14 EET" name="tearDown" finished-at="2025-11-10T22:03:14 EET" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:14 EET" name="setUp" finished-at="2025-11-10T22:03:17 EET" duration-ms="2810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVideoPlayback()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:17 EET" name="testVideoPlayback" description="AU01: Verify that About Us window video play when click on play button" finished-at="2025-11-10T22:03:19 EET" duration-ms="1749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVideoPlayback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.AboutUsModalTest@202b0582]" started-at="2025-11-10T22:03:19 EET" name="tearDown" finished-at="2025-11-10T22:03:19 EET" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.AboutUsModalTest -->
+      <class name="com.spacetest.demoblaze.tests.PlaceOrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:05 EET" name="setUp" finished-at="2025-11-10T22:08:09 EET" duration-ms="3202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartIsEmptyAfterOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:09 EET" name="testCartIsEmptyAfterOrder" description="PO07: Verify cart is empty after order completion" finished-at="2025-11-10T22:08:27 EET" duration-ms="18284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartIsEmptyAfterOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:27 EET" name="tearDown" finished-at="2025-11-10T22:08:27 EET" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:27 EET" name="setUp" finished-at="2025-11-10T22:08:30 EET" duration-ms="2247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCloseButtonOnPlaceOrderModal()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:30 EET" name="testCloseButtonOnPlaceOrderModal" description="PO06: Validate &#039;Close&#039; button behavior" finished-at="2025-11-10T22:08:36 EET" duration-ms="6325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseButtonOnPlaceOrderModal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:36 EET" name="tearDown" finished-at="2025-11-10T22:08:36 EET" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:36 EET" name="setUp" finished-at="2025-11-10T22:08:40 EET" duration-ms="3348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidOrderEmptyFields()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:40 EET" name="testInvalidOrderEmptyFields" description="PO02: Verify order cannot be placed with empty fields" finished-at="2025-11-10T22:08:45 EET" duration-ms="4874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidOrderEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:45 EET" name="tearDown" finished-at="2025-11-10T22:08:45 EET" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:45 EET" name="setUp" finished-at="2025-11-10T22:08:48 EET" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultipleOrders()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:08:48 EET" name="testMultipleOrders" description="PO08: Verify user can place multiple orders sequentially" finished-at="2025-11-10T22:09:02 EET" duration-ms="13710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:02 EET" name="tearDown" finished-at="2025-11-10T22:09:02 EET" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:02 EET" name="setUp" finished-at="2025-11-10T22:09:07 EET" duration-ms="4651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderWithEmptyCart()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:07 EET" name="testOrderWithEmptyCart" description="PO03: Verify order cannot be placed without selecting a product" finished-at="2025-11-10T22:09:08 EET" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderWithEmptyCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:08 EET" name="tearDown" finished-at="2025-11-10T22:09:09 EET" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:09 EET" name="setUp" finished-at="2025-11-10T22:09:11 EET" duration-ms="2466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPurchaseConfirmationDetails()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:11 EET" name="testPurchaseConfirmationDetails" description="PO09: Verify purchase confirmation contains correct details" finished-at="2025-11-10T22:09:20 EET" duration-ms="8841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPurchaseConfirmationDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:20 EET" name="tearDown" finished-at="2025-11-10T22:09:20 EET" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:20 EET" name="setUp" finished-at="2025-11-10T22:09:23 EET" duration-ms="2669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidOrder()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:23 EET" name="testValidOrder" description="PO01: Verify valid order can be placed successfully" finished-at="2025-11-10T22:09:31 EET" duration-ms="8407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.PlaceOrderTest@1a75e76a]" started-at="2025-11-10T22:09:31 EET" name="tearDown" finished-at="2025-11-10T22:09:32 EET" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.PlaceOrderTest -->
+      <class name="com.spacetest.demoblaze.tests.CategoryMenuTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:04:58 EET" name="setUp" finished-at="2025-11-10T22:05:01 EET" duration-ms="2694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAllProductDetailsArePresent()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:01 EET" name="testAllProductDetailsArePresent" description="Verify all product details (name, price, image, description) are displayed" finished-at="2025-11-10T22:05:03 EET" duration-ms="2713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllProductDetailsArePresent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:03 EET" name="tearDown" finished-at="2025-11-10T22:05:04 EET" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:04 EET" name="setUp" finished-at="2025-11-10T22:05:08 EET" duration-ms="3502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:08 EET" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-11-10T22:05:09 EET" duration-ms="1894" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,15 +1188,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCategoryProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:10 EEST" name="tearDown" finished-at="2025-10-25T20:03:10 EEST" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:09 EET" name="tearDown" finished-at="2025-11-10T22:05:10 EET" duration-ms="441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:10 EEST" name="setUp" finished-at="2025-10-25T20:03:12 EEST" duration-ms="1994" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:10 EET" name="setUp" finished-at="2025-11-10T22:05:13 EET" duration-ms="3118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:12 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:14 EEST" duration-ms="1757" status="PASS">
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:13 EET" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-11-10T22:05:15 EET" duration-ms="2401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,15 +1212,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCategoryProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:14 EEST" name="tearDown" finished-at="2025-10-25T20:03:14 EEST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:15 EET" name="tearDown" finished-at="2025-11-10T22:05:16 EET" duration-ms="527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:14 EEST" name="setUp" finished-at="2025-10-25T20:03:17 EEST" duration-ms="2094" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:16 EET" name="setUp" finished-at="2025-11-10T22:05:20 EET" duration-ms="3726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:17 EEST" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-10-25T20:03:18 EEST" duration-ms="1704" status="PASS">
+        <test-method signature="testCategoryProducts(java.lang.String,java.lang.String)[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:20 EET" name="testCategoryProducts" description="Verify categories show correct products" data-provider="categoryData" finished-at="2025-11-10T22:05:20 EET" duration-ms="787" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,11 +1236,192 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCategoryProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@5d7148e2]" started-at="2025-10-25T20:03:18 EEST" name="tearDown" finished-at="2025-10-25T20:03:19 EEST" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:20 EET" name="tearDown" finished-at="2025-11-10T22:05:21 EET" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:21 EET" name="setUp" finished-at="2025-11-10T22:05:24 EET" duration-ms="2636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testClickProductImageNavigates()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:24 EET" name="testClickProductImageNavigates" description="Verify clicking a product image navigates to the correct product page" finished-at="2025-11-10T22:05:27 EET" duration-ms="3494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickProductImageNavigates -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:27 EET" name="tearDown" finished-at="2025-11-10T22:05:28 EET" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:28 EET" name="setUp" finished-at="2025-11-10T22:05:31 EET" duration-ms="3363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPaginationNavigation()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:31 EET" name="testPaginationNavigation" description="Verify clicking &#039;Next&#039; and &#039;Previous&#039; navigates pages" finished-at="2025-11-10T22:05:34 EET" duration-ms="2845" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product list after clicking 'Previous' does not match the original Page 1 list.: Lists differ at element [0]: Nokia lumia 1520 != Samsung galaxy s6 expected [Nokia lumia 1520] but found [Samsung galaxy s6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product list after clicking 'Previous' does not match the original Page 1 list.: Lists differ at element [0]: Nokia lumia 1520 != Samsung galaxy s6 expected [Nokia lumia 1520] but found [Samsung galaxy s6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:1656)
+at com.spacetest.demoblaze.tests.CategoryMenuTest.testPaginationNavigation(CategoryMenuTest.java:143)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPaginationNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:34 EET" name="tearDown" finished-at="2025-11-10T22:05:34 EET" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:34 EET" name="setUp" finished-at="2025-11-10T22:05:37 EET" duration-ms="2743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPrevButtonHiddenOnFirstPage()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:37 EET" name="testPrevButtonHiddenOnFirstPage" description="Verify &#039;Previous&#039; button is not displayed on the first page" finished-at="2025-11-10T22:05:37 EET" duration-ms="107" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['Previous' button IS visible on the first page. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'Previous' button IS visible on the first page. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.spacetest.demoblaze.tests.CategoryMenuTest.testPrevButtonHiddenOnFirstPage(CategoryMenuTest.java:105)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrevButtonHiddenOnFirstPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.CategoryMenuTest@6caf0677]" started-at="2025-11-10T22:05:37 EET" name="tearDown" finished-at="2025-11-10T22:05:37 EET" duration-ms="432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.spacetest.demoblaze.tests.CategoryMenuTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      <class name="com.spacetest.demoblaze.tests.FooterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.spacetest.demoblaze.tests.FooterTest@16eb3ea3]" started-at="2025-11-10T22:05:57 EET" name="setUp" finished-at="2025-11-10T22:06:00 EET" duration-ms="3542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFooterInformationIsCorrect()[pri:0, instance:com.spacetest.demoblaze.tests.FooterTest@16eb3ea3]" started-at="2025-11-10T22:06:00 EET" name="testFooterInformationIsCorrect" description="Verify that the information in the footer is correct" finished-at="2025-11-10T22:06:01 EET" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterInformationIsCorrect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.spacetest.demoblaze.tests.FooterTest@16eb3ea3]" started-at="2025-11-10T22:06:01 EET" name="tearDown" finished-at="2025-11-10T22:06:01 EET" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.spacetest.demoblaze.tests.FooterTest -->
+    </test> <!-- UI Tests (All) -->
+    <test started-at="2025-11-10T22:11:13 EET" name="API Tests (All)" finished-at="2025-11-10T22:11:24 EET" duration-ms="11456">
+      <class name="com.spacetest.demoblaze.tests.RestfulBookerFullTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:13 EET" name="setup" finished-at="2025-11-10T22:11:14 EET" duration-ms="640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPing()[pri:0, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:14 EET" name="testPing" description="Health Check (Ping)" finished-at="2025-11-10T22:11:16 EET" duration-ms="2080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPing -->
+        <test-method signature="testAuthenticate()[pri:1, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:16 EET" name="testAuthenticate" description="Get authentication token" finished-at="2025-11-10T22:11:18 EET" duration-ms="1940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticate -->
+        <test-method signature="testCreateBooking()[pri:2, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:18 EET" name="testCreateBooking" description="Create a new booking" finished-at="2025-11-10T22:11:19 EET" duration-ms="1870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBooking -->
+        <test-method signature="testGetCreatedBooking()[pri:3, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:19 EET" name="testGetCreatedBooking" description="Get details for the created booking" finished-at="2025-11-10T22:11:20 EET" depends-on-methods="com.spacetest.demoblaze.tests.RestfulBookerFullTests.testCreateBooking" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCreatedBooking -->
+        <test-method signature="testUpdateBookingPut()[pri:4, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:20 EET" name="testUpdateBookingPut" description="Fully update the created booking (PUT)" finished-at="2025-11-10T22:11:21 EET" depends-on-methods="com.spacetest.demoblaze.tests.RestfulBookerFullTests.testAuthenticate, com.spacetest.demoblaze.tests.RestfulBookerFullTests.testCreateBooking" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateBookingPut -->
+        <test-method signature="testPartialUpdateBookingPatch()[pri:5, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:21 EET" name="testPartialUpdateBookingPatch" description="Partially update the booking (PATCH)" finished-at="2025-11-10T22:11:22 EET" depends-on-methods="com.spacetest.demoblaze.tests.RestfulBookerFullTests.testAuthenticate, com.spacetest.demoblaze.tests.RestfulBookerFullTests.testCreateBooking" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartialUpdateBookingPatch -->
+        <test-method signature="testDeleteBooking()[pri:6, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:22 EET" name="testDeleteBooking" description="Delete the booking" finished-at="2025-11-10T22:11:23 EET" depends-on-methods="com.spacetest.demoblaze.tests.RestfulBookerFullTests.testAuthenticate, com.spacetest.demoblaze.tests.RestfulBookerFullTests.testCreateBooking" duration-ms="753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBooking -->
+        <test-method signature="testVerifyBookingDeleted()[pri:7, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:23 EET" name="testVerifyBookingDeleted" description="Verify booking was deleted" finished-at="2025-11-10T22:11:24 EET" depends-on-methods="com.spacetest.demoblaze.tests.RestfulBookerFullTests.testDeleteBooking" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyBookingDeleted -->
+        <test-method signature="testGetNonExistentBooking()[pri:8, instance:com.spacetest.demoblaze.tests.RestfulBookerFullTests@5b799640]" started-at="2025-11-10T22:11:24 EET" name="testGetNonExistentBooking" description="Attempt to get a non-existent booking" finished-at="2025-11-10T22:11:24 EET" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNonExistentBooking -->
+      </class> <!-- com.spacetest.demoblaze.tests.RestfulBookerFullTests -->
+    </test> <!-- API Tests (All) -->
+  </suite> <!-- Master Regression Suite (DemoBlaze) -->
 </testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Product Browsing Feature Suite" parallel="classes" thread-count="4" verbose="1">
+
+    <!-- 
+      This suite focuses on the user's experience finding and
+      viewing products, without adding them to the cart.
+    -->
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="true"/>
+    
+    <test name="Product View &amp; Navigation Tests">
+        <classes>
+            <class name="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+            <class name="com.spacetest.demoblaze.tests.ProductPageTest"/>
+        </classes>
+    </test>
+
+</suite>
