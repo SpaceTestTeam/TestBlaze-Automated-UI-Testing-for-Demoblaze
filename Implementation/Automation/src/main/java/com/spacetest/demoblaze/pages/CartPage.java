@@ -50,6 +50,7 @@ public class CartPage extends BasePage {
         }
     }
     
+@SuppressWarnings("null")
 public List<CartItemComponent> getCartItems() {
         
         // THIS IS THE FIX:

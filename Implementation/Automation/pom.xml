@@ -4,163 +4,134 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.spacetest.demoblaze</groupId>
-    <artifactId>demoblaze</artifactId>
+    <groupId>com.spacetest</groupId>
+    <artifactId>TestBlaze-UI-Automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
-        <!-- Define versions for plugins and dependencies -->
-        <allure.version>2.29.1</allure.version>
-        <aspectj.version>1.9.22</aspectj.version>
-        <surefire.version>3.2.5</surefire.version>
-        <testng.version>7.11.0</testng.version>
-        <selenium.version>4.37.0</selenium.version>
+        <selenium.version>4.16.1</selenium.version>
+        <testng.version>7.9.0</testng.version>
+        <suiteXmlFile>src/test/resources/suites/testng-regression.xml</suiteXmlFile> <!-- Default Suite -->
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!-- Selenium Java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <!-- 
-              *** FIX *** Changed version to match ${selenium.version} to avoid conflicts.
-            -->
-            <version>${selenium.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
-        
-        <!-- ===== ALLURE DEPENDENCIES ===== -->
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>${allure.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-java-commons</artifactId>
-            <version>${allure.version}</version>
-        </dependency>
-        <!-- Required by Allure for annotations -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
-        <!-- ================================== -->
 
-        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.1.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <!-- WebDriver Manager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>6.2.0</version>
+            <version>5.6.3</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        
+        <!-- Allure Reporting -->
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.18.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.20.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.19.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.19.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>2.19.2</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.25.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.25.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>2.0.17</version>
-            <scope>test</scope>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.25.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.5.6</version>
-            <scope>test</scope>
-        </dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.6</version>
+    <scope>test</scope>
+</dependency>
     </dependencies>
-<build>
-    <plugins>
-        <!-- Test Execution -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>testng-smoke.xml</suiteXmlFile>
-                    <suiteXmlFile>testng-regression.xml</suiteXmlFile>
-                    <suiteXmlFile>testng-api.xml</suiteXmlFile>
-                </suiteXmlFiles>
-                <!-- Optional: parallel or rerun failed tests -->
-                <parallel>none</parallel>
-                <testFailureIgnore>false</testFailureIgnore>
-            </configuration>
-        </plugin>
 
-        <!-- Allure Integration -->
-        <plugin>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-maven</artifactId>
-            <version>2.11.2</version>
-        </plugin>
-    </plugins>
-</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            
+            <!-- Surefire Plugin to run TestNG XMLs -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.3</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- PROFILES -->
+    <profiles>
+        <!-- Standard Profiles -->
+        <profile>
+            <id>regression</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-regression.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>smoke</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-smoke.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <!-- Granular Feature Profiles -->
+        <profile>
+            <id>feature-auth</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-feature-auth.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>feature-browsing</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-feature-browsing.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>feature-checkout</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-feature-checkout.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>feature-nav</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-feature-navigation.xml</suiteXmlFile>
+            </properties>
+        </profile>
+        
+        <profile>
+            <id>feature-modals</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/suites/testng-feature-modals.xml</suiteXmlFile>
+            </properties>
+        </profile>
+    </profiles>
 </project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestBlaze Feature: Navigation and Layout" verbose="1">
+    <test name="Nav Tests">
+        <classes>
+            <class name="com.spacetest.demoblaze.tests.NavigationBarTest"/>
+            <class name="com.spacetest.demoblaze.tests.FooterTest"/>
+            <class name="com.spacetest.demoblaze.tests.ResponsiveLayoutTest"/>
+        </classes>
+    </test>
+</suite>

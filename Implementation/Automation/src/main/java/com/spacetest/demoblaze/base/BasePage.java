@@ -34,6 +34,7 @@ public class BasePage {
         return driver.getCurrentUrl();
     }
 
+    @SuppressWarnings("null")
     public void navigateToPage() {
         driver.get(pageUrl);
     }

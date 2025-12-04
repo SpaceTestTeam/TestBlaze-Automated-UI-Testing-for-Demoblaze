@@ -48,6 +48,7 @@ public class CategoryComponent extends BaseComponent {
         );
 
         // 2. Click the category link
+        @SuppressWarnings("null")
         WebElement categoryLink = driver.findElement(By.linkText(categoryName));
         wait.until(ExpectedConditions.elementToBeClickable(categoryLink)).click();
 
@@ -60,11 +61,13 @@ public class CategoryComponent extends BaseComponent {
         );
     }
 
+    @SuppressWarnings("null")
     public List<String> getProductNames() {
         // THIS IS THE FIX: Wait for at least ONE product title to be visible.
         wait.until(ExpectedConditions.visibilityOfElementLocated(productTitleLocator));
 
         // Now that we know the products have loaded, we can safely get them all.
+        @SuppressWarnings("null")
         List<WebElement> productElements = driver.findElements(productTitleLocator);
         return productElements.stream()
                 .map(WebElement::getText)
@@ -74,6 +77,7 @@ public class CategoryComponent extends BaseComponent {
         // Wait for at least one card to be present
         wait.until(ExpectedConditions.visibilityOfElementLocated(productCardLocator));
         
+        @SuppressWarnings("null")
         List<WebElement> productCardElements = driver.findElements(productCardLocator);
         List<ProductCardComponent> productCards = new ArrayList<>();
         

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestBlaze Feature: Browsing" verbose="1">
+    <test name="Browsing Tests">
+        <classes>
+            <class name="com.spacetest.demoblaze.tests.ProductPageTest"/>
+            <class name="com.spacetest.demoblaze.tests.CategoryMenuTest"/>
+            <class name="com.spacetest.demoblaze.tests.ProductSliderTest"/>
+        </classes>
+    </test>
+</suite>

@@ -50,6 +50,7 @@ public class ProductCardComponent extends BaseComponent {
         return img.getAttribute("src");
     }
 
+    @SuppressWarnings("null")
     public boolean isImageDisplayed() {
         // Wait for the <img> tag to be *visible*
         try {
@@ -63,12 +64,14 @@ public class ProductCardComponent extends BaseComponent {
 
     // --- Action Methods (Now with Waits) ---
     
+    @SuppressWarnings("null")
     public ProductPage clickTitle() {
         // Wait for the <a> tag to be clickable
         wait.until(ExpectedConditions.elementToBeClickable(rootElement.findElement(titleLink))).click();
         return new ProductPage(driver); 
     }
 
+    @SuppressWarnings("null")
     public ProductPage clickImage() {
         // Wait for the <a> tag (imageLink) to be clickable and click it
         wait.until(ExpectedConditions.elementToBeClickable(rootElement.findElement(imageLink))).click();

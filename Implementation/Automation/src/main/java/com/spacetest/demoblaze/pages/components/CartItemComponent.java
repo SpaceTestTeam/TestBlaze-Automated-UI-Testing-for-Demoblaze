@@ -20,14 +20,17 @@ public class CartItemComponent extends BaseComponent {
         this.rootElement = rootElement;
     }
 
+    @SuppressWarnings("null")
     public String getName() {
         return wait.until(ExpectedConditions.visibilityOf(rootElement.findElement(name))).getText();
     }
 
+    @SuppressWarnings("null")
     public String getPrice() {
         return wait.until(ExpectedConditions.visibilityOf(rootElement.findElement(price))).getText();
     }
 
+    @SuppressWarnings("null")
     public void clickDelete() {
         wait.until(ExpectedConditions.elementToBeClickable(rootElement.findElement(deleteLink))).click();
     }

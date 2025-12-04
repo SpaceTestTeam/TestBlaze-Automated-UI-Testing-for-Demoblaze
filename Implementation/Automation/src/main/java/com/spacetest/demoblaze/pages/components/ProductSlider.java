@@ -34,6 +34,7 @@ public class ProductSlider extends BaseComponent {
         prevCarouselButton.click();
     }
 
+    @SuppressWarnings("null")
     public String getActiveCarouselImageSrc() {
         // Find the element dynamically
         return driver.findElement(activeImageLocator).getAttribute("src");
