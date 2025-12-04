@@ -17,3 +17,5 @@
 **/*.js
 
 **/*.css
+
+!**/Postman Collections.json
